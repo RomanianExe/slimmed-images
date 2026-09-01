@@ -1,0 +1,67 @@
+{
+  "example": "nginx-golang-mysql",
+  "cluster": "Go",
+  "generated_at": "2026-09-01T18:39:13Z",
+  "image": {
+    "reference": "ghcr.io/romanianexe/nginx-golang-mysql:slim",
+    "pushed": false,
+    "id": "sha256:e9b15ad2468cffa8a36122989dde141c2eb790b09b3538763175d34db8aaec71",
+    "created": "2026-08-27T14:02:08.87499104+03:00",
+    "size_bytes": 4419230,
+    "size_human": "4.42MB"
+  },
+  "original": {
+    "source": "built from the example's compose file",
+    "upstream_reference": null,
+    "upstream_digest": null,
+    "local_id": "sha256:e6d0a582f3b10f4b66bb6b0834b86228e6599722b827e8c5f8caee1c36112648",
+    "size_bytes": 4156598,
+    "size_human": "4.16MB"
+  },
+  "measurements": {
+    "size_reduction_pct": -6.3,
+    "sbom_components": {
+      "original": 6,
+      "slim": 6
+    },
+    "vulnerabilities": {
+      "original": 41,
+      "slim": 41,
+      "original_by_severity": {
+        "High": 24,
+        "Medium": 14,
+        "Critical": 2,
+        "Low": 1
+      },
+      "slim_by_severity": {
+        "High": 24,
+        "Medium": 14,
+        "Critical": 2,
+        "Low": 1
+      }
+    },
+    "functional_tests": {
+      "original": "PASS (tests/specific/nginx-golang-mysql/test.sh)",
+      "slim": "PASS (tests/specific/nginx-golang-mysql/test.sh)"
+    },
+    "caveat": "Slim strips package metadata along with unused files, so part of the component and vulnerability drop is reduced scanner visibility rather than reduced exposure. See docs/methodology.md \u00a75."
+  },
+  "reproduce": {
+    "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
+    "commit": "7f738fc40a9def501b13abcebfb023e2f7149bef",
+    "worktree_clean": true,
+    "command": "pipeline/run-pipeline.sh nginx-golang-mysql",
+    "compose_file": "vendor/awesome-compose/nginx-golang-mysql/compose.yaml",
+    "compose_service": "backend",
+    "configuration": "examples/nginx-golang-mysql/pipeline.env",
+    "test_script": "tests/specific/nginx-golang-mysql/test.sh",
+    "artifacts": "artifacts/nginx-golang-mysql/",
+    "tool_versions": {
+      "docker": "29.7.2",
+      "docker_compose": "5.5.0",
+      "mint": "1.41.8-1-g4b0d7e91",
+      "syft": "1.51.0",
+      "grype": "0.117.0"
+    }
+  }
+}

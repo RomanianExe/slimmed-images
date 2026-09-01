@@ -1,0 +1,69 @@
+{
+  "example": "apache-php",
+  "cluster": "PHP",
+  "generated_at": "2026-09-01T18:39:10Z",
+  "image": {
+    "reference": "ghcr.io/romanianexe/apache-php:slim",
+    "pushed": false,
+    "id": "sha256:c5adfe7fc57652ad1145fb5b4c9612b1d00b123fb07158fde8811026d5ecfec8",
+    "created": "2026-08-23T13:03:53.902852882+03:00",
+    "size_bytes": 33723017,
+    "size_human": "33.72MB"
+  },
+  "original": {
+    "source": "built from the example's compose file",
+    "upstream_reference": null,
+    "upstream_digest": null,
+    "local_id": "sha256:68e209b8c8f9173a02eab0df17da31700d850eee41bc4f00587d89bfb8c8a3ca",
+    "size_bytes": 167773412,
+    "size_human": "167.77MB"
+  },
+  "measurements": {
+    "size_reduction_pct": 79.9,
+    "sbom_components": {
+      "original": 197,
+      "slim": 4
+    },
+    "vulnerabilities": {
+      "original": 1929,
+      "slim": 59,
+      "original_by_severity": {
+        "Critical": 183,
+        "High": 488,
+        "Medium": 410,
+        "Low": 48,
+        "Negligible": 784,
+        "Unknown": 16
+      },
+      "slim_by_severity": {
+        "Critical": 12,
+        "High": 26,
+        "Medium": 19,
+        "Low": 2
+      }
+    },
+    "functional_tests": {
+      "original": "PASS (tests/specific/apache-php/test.sh)",
+      "slim": "PASS (tests/specific/apache-php/test.sh)"
+    },
+    "caveat": "Slim strips package metadata along with unused files, so part of the component and vulnerability drop is reduced scanner visibility rather than reduced exposure. See docs/methodology.md \u00a75."
+  },
+  "reproduce": {
+    "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
+    "commit": "7f738fc40a9def501b13abcebfb023e2f7149bef",
+    "worktree_clean": true,
+    "command": "pipeline/run-pipeline.sh apache-php",
+    "compose_file": "vendor/awesome-compose/apache-php/compose.yaml",
+    "compose_service": "web",
+    "configuration": "examples/apache-php/pipeline.env",
+    "test_script": "tests/specific/apache-php/test.sh",
+    "artifacts": "artifacts/apache-php/",
+    "tool_versions": {
+      "docker": "29.7.2",
+      "docker_compose": "5.5.0",
+      "mint": "1.41.8-1-g4b0d7e91",
+      "syft": "1.51.0",
+      "grype": "0.117.0"
+    }
+  }
+}

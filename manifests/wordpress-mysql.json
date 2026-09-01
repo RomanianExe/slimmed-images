@@ -1,0 +1,66 @@
+{
+  "example": "wordpress-mysql",
+  "cluster": "PHP",
+  "generated_at": "2026-09-01T18:39:19Z",
+  "image": {
+    "reference": "ghcr.io/romanianexe/wordpress-mysql:slim",
+    "pushed": false,
+    "id": "sha256:021879fe08ca5ba0bac7fede88be6cc7c8da51a34086bda404818681dc670fb2",
+    "created": "2026-09-01T00:47:44.874524861+03:00",
+    "size_bytes": 140202190,
+    "size_human": "140.20MB"
+  },
+  "original": {
+    "source": "prebuilt",
+    "upstream_reference": "wordpress:latest",
+    "upstream_digest": "wordpress@sha256:5a93c470ae8220fddf71f6ebe3bc94e615ddc2ae4d9810f795b830fb11c41a17",
+    "local_id": "sha256:5a93c470ae8220fddf71f6ebe3bc94e615ddc2ae4d9810f795b830fb11c41a17",
+    "size_bytes": 274729632,
+    "size_human": "274.73MB"
+  },
+  "measurements": {
+    "size_reduction_pct": 49.0,
+    "sbom_components": {
+      "original": 273,
+      "slim": 18
+    },
+    "vulnerabilities": {
+      "original": 1045,
+      "slim": 4,
+      "original_by_severity": {
+        "Negligible": 671,
+        "High": 114,
+        "Critical": 45,
+        "Low": 31,
+        "Medium": 160,
+        "Unknown": 24
+      },
+      "slim_by_severity": {
+        "High": 4
+      }
+    },
+    "functional_tests": {
+      "original": "PASS (tests/specific/wordpress-mysql/test.sh)",
+      "slim": "PASS (tests/specific/wordpress-mysql/test.sh)"
+    },
+    "caveat": "Slim strips package metadata along with unused files, so part of the component and vulnerability drop is reduced scanner visibility rather than reduced exposure. See docs/methodology.md \u00a75."
+  },
+  "reproduce": {
+    "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
+    "commit": "7f738fc40a9def501b13abcebfb023e2f7149bef",
+    "worktree_clean": true,
+    "command": "pipeline/run-pipeline.sh wordpress-mysql",
+    "compose_file": "vendor/awesome-compose/wordpress-mysql/compose.yaml",
+    "compose_service": "wordpress",
+    "configuration": "examples/wordpress-mysql/pipeline.env",
+    "test_script": "tests/specific/wordpress-mysql/test.sh",
+    "artifacts": "artifacts/wordpress-mysql/",
+    "tool_versions": {
+      "docker": "29.7.2",
+      "docker_compose": "5.5.0",
+      "mint": "1.41.8-1-g4b0d7e91",
+      "syft": "1.51.0",
+      "grype": "0.117.0"
+    }
+  }
+}

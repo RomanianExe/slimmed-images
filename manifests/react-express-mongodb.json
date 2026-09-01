@@ -1,0 +1,69 @@
+{
+  "example": "react-express-mongodb",
+  "cluster": "Node/JS",
+  "generated_at": "2026-09-01T18:39:16Z",
+  "image": {
+    "reference": "ghcr.io/romanianexe/react-express-mongodb:slim",
+    "pushed": false,
+    "id": "sha256:abde0f41144489270459d77c4b0afbed4806bc9f39522585d5b50b61d91596df",
+    "created": "2026-08-27T13:28:10.425956586+03:00",
+    "size_bytes": 45668317,
+    "size_human": "45.67MB"
+  },
+  "original": {
+    "source": "built from the example's compose file",
+    "upstream_reference": null,
+    "upstream_digest": null,
+    "local_id": "sha256:282b48b500c68537499a88e3ef59fba82679b8feea77f4602efa5326a3bb8504",
+    "size_bytes": 89926726,
+    "size_human": "89.93MB"
+  },
+  "measurements": {
+    "size_reduction_pct": 49.2,
+    "sbom_components": {
+      "original": 512,
+      "slim": 146
+    },
+    "vulnerabilities": {
+      "original": 244,
+      "slim": 74,
+      "original_by_severity": {
+        "High": 86,
+        "Critical": 5,
+        "Negligible": 62,
+        "Low": 29,
+        "Medium": 58,
+        "Unknown": 4
+      },
+      "slim_by_severity": {
+        "High": 33,
+        "Critical": 4,
+        "Low": 17,
+        "Medium": 20
+      }
+    },
+    "functional_tests": {
+      "original": "PASS (tests/specific/react-express-mongodb/test.sh)",
+      "slim": "PASS (tests/specific/react-express-mongodb/test.sh)"
+    },
+    "caveat": "Slim strips package metadata along with unused files, so part of the component and vulnerability drop is reduced scanner visibility rather than reduced exposure. See docs/methodology.md \u00a75."
+  },
+  "reproduce": {
+    "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
+    "commit": "7f738fc40a9def501b13abcebfb023e2f7149bef",
+    "worktree_clean": true,
+    "command": "pipeline/run-pipeline.sh react-express-mongodb",
+    "compose_file": "vendor/awesome-compose/react-express-mongodb/compose.yaml",
+    "compose_service": "backend",
+    "configuration": "examples/react-express-mongodb/pipeline.env",
+    "test_script": "tests/specific/react-express-mongodb/test.sh",
+    "artifacts": "artifacts/react-express-mongodb/",
+    "tool_versions": {
+      "docker": "29.7.2",
+      "docker_compose": "5.5.0",
+      "mint": "1.41.8-1-g4b0d7e91",
+      "syft": "1.51.0",
+      "grype": "0.117.0"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "example": "portainer",
+  "cluster": "Go",
+  "generated_at": "2026-09-01T18:39:15Z",
+  "image": {
+    "reference": "ghcr.io/romanianexe/portainer:slim",
+    "pushed": false,
+    "id": "sha256:78e0b76788b297bd90050f7bafa2b649bf8ca35c0194f2ce6da11b450e93d69b",
+    "created": "2026-09-01T01:01:52.910324494+03:00",
+    "size_bytes": 38744462,
+    "size_human": "38.74MB"
+  },
+  "original": {
+    "source": "prebuilt",
+    "upstream_reference": "portainer/portainer-ce:alpine",
+    "upstream_digest": "portainer/portainer-ce@sha256:e6b0225f4bbc989e398c85062f7426f8cf4b61f8aca6f40bf44789d1dada1949",
+    "local_id": "sha256:e6b0225f4bbc989e398c85062f7426f8cf4b61f8aca6f40bf44789d1dada1949",
+    "size_bytes": 48553782,
+    "size_human": "48.55MB"
+  },
+  "measurements": {
+    "size_reduction_pct": 20.2,
+    "sbom_components": {
+      "original": 328,
+      "slim": 312
+    },
+    "vulnerabilities": {
+      "original": 34,
+      "slim": 11,
+      "original_by_severity": {
+        "High": 20,
+        "Critical": 2,
+        "Medium": 8,
+        "Unknown": 4
+      },
+      "slim_by_severity": {
+        "High": 6,
+        "Critical": 2,
+        "Medium": 3
+      }
+    },
+    "functional_tests": {
+      "original": "PASS (tests/specific/portainer/test.sh)",
+      "slim": "PASS (tests/specific/portainer/test.sh)"
+    },
+    "caveat": "Slim strips package metadata along with unused files, so part of the component and vulnerability drop is reduced scanner visibility rather than reduced exposure. See docs/methodology.md \u00a75."
+  },
+  "reproduce": {
+    "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
+    "commit": "7f738fc40a9def501b13abcebfb023e2f7149bef",
+    "worktree_clean": true,
+    "command": "pipeline/run-pipeline.sh portainer",
+    "compose_file": "vendor/awesome-compose/portainer/compose.yaml",
+    "compose_service": "portainer",
+    "configuration": "examples/portainer/pipeline.env",
+    "test_script": "tests/specific/portainer/test.sh",
+    "artifacts": "artifacts/portainer/",
+    "tool_versions": {
+      "docker": "29.7.2",
+      "docker_compose": "5.5.0",
+      "mint": "1.41.8-1-g4b0d7e91",
+      "syft": "1.51.0",
+      "grype": "0.117.0"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "example": "flask-redis",
+  "cluster": "Python",
+  "generated_at": "2026-09-01T18:39:11Z",
+  "image": {
+    "reference": "ghcr.io/romanianexe/flask-redis:slim",
+    "pushed": false,
+    "id": "sha256:faa0f4b06038e9a54ab2733661796a8c9763d3a492fd884a893dae3af9471ca6",
+    "created": "2026-08-28T12:44:58.225027424+03:00",
+    "size_bytes": 11577522,
+    "size_human": "11.58MB"
+  },
+  "original": {
+    "source": "built from the example's compose file",
+    "upstream_reference": null,
+    "upstream_digest": null,
+    "local_id": "sha256:edbf2defb51d35c966be0672e7249dd8b0351a290fb9f90a259c1ddfb4d9ffb8",
+    "size_bytes": 25046244,
+    "size_human": "25.05MB"
+  },
+  "measurements": {
+    "size_reduction_pct": 53.8,
+    "sbom_components": {
+      "original": 82,
+      "slim": 3
+    },
+    "vulnerabilities": {
+      "original": 51,
+      "slim": 20,
+      "original_by_severity": {
+        "High": 21,
+        "Medium": 22,
+        "Unknown": 4,
+        "Low": 3,
+        "Negligible": 1
+      },
+      "slim_by_severity": {
+        "High": 5,
+        "Medium": 11,
+        "Low": 3,
+        "Negligible": 1
+      }
+    },
+    "functional_tests": {
+      "original": "PASS (tests/specific/flask-redis/test.sh)",
+      "slim": "PASS (tests/specific/flask-redis/test.sh)"
+    },
+    "caveat": "Slim strips package metadata along with unused files, so part of the component and vulnerability drop is reduced scanner visibility rather than reduced exposure. See docs/methodology.md \u00a75."
+  },
+  "reproduce": {
+    "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
+    "commit": "7f738fc40a9def501b13abcebfb023e2f7149bef",
+    "worktree_clean": true,
+    "command": "pipeline/run-pipeline.sh flask-redis",
+    "compose_file": "vendor/awesome-compose/flask-redis/compose.yaml",
+    "compose_service": "web",
+    "configuration": "examples/flask-redis/pipeline.env",
+    "test_script": "tests/specific/flask-redis/test.sh",
+    "artifacts": "artifacts/flask-redis/",
+    "tool_versions": {
+      "docker": "29.7.2",
+      "docker_compose": "5.5.0",
+      "mint": "1.41.8-1-g4b0d7e91",
+      "syft": "1.51.0",
+      "grype": "0.117.0"
+    }
+  }
+}

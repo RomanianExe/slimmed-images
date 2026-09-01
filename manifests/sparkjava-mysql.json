@@ -1,0 +1,66 @@
+{
+  "example": "sparkjava-mysql",
+  "cluster": "Java",
+  "generated_at": "2026-09-01T18:39:17Z",
+  "image": {
+    "reference": "ghcr.io/romanianexe/sparkjava-mysql:slim",
+    "pushed": false,
+    "id": "sha256:7ae45e2313acd906173fc1cc72b60b0dc86e71fba93f90dae77b57eacfb8db83",
+    "created": "2026-08-24T21:37:19.124683295+03:00",
+    "size_bytes": 57766179,
+    "size_human": "57.77MB"
+  },
+  "original": {
+    "source": "built from the example's compose file",
+    "upstream_reference": null,
+    "upstream_digest": null,
+    "local_id": "sha256:04bcbd33707703ddf730458d64825748dd679cc6a60c235612704e27d2808299",
+    "size_bytes": 101159442,
+    "size_human": "101.16MB"
+  },
+  "measurements": {
+    "size_reduction_pct": 42.9,
+    "sbom_components": {
+      "original": 172,
+      "slim": 22
+    },
+    "vulnerabilities": {
+      "original": 468,
+      "slim": 50,
+      "original_by_severity": {
+        "High": 33,
+        "Medium": 282,
+        "Low": 141,
+        "Negligible": 12
+      },
+      "slim_by_severity": {
+        "High": 20,
+        "Medium": 20,
+        "Low": 10
+      }
+    },
+    "functional_tests": {
+      "original": "PASS (tests/specific/sparkjava-mysql/test.sh)",
+      "slim": "PASS (tests/specific/sparkjava-mysql/test.sh)"
+    },
+    "caveat": "Slim strips package metadata along with unused files, so part of the component and vulnerability drop is reduced scanner visibility rather than reduced exposure. See docs/methodology.md \u00a75."
+  },
+  "reproduce": {
+    "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
+    "commit": "7f738fc40a9def501b13abcebfb023e2f7149bef",
+    "worktree_clean": true,
+    "command": "pipeline/run-pipeline.sh sparkjava-mysql",
+    "compose_file": "vendor/awesome-compose/sparkjava-mysql/compose.yaml",
+    "compose_service": "backend",
+    "configuration": "examples/sparkjava-mysql/pipeline.env",
+    "test_script": "tests/specific/sparkjava-mysql/test.sh",
+    "artifacts": "artifacts/sparkjava-mysql/",
+    "tool_versions": {
+      "docker": "29.7.2",
+      "docker_compose": "5.5.0",
+      "mint": "1.41.8-1-g4b0d7e91",
+      "syft": "1.51.0",
+      "grype": "0.117.0"
+    }
+  }
+}

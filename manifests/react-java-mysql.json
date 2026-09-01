@@ -1,0 +1,68 @@
+{
+  "example": "react-java-mysql",
+  "cluster": "Java",
+  "generated_at": "2026-09-01T18:39:16Z",
+  "image": {
+    "reference": "ghcr.io/romanianexe/react-java-mysql:slim",
+    "pushed": false,
+    "id": "sha256:c7ea802d20fa7b8573773642f1b3bf5367060d6f913cb11c72662a9d9dc68abb",
+    "created": "2026-08-28T12:47:32.304809922+03:00",
+    "size_bytes": 91150344,
+    "size_human": "91.15MB"
+  },
+  "original": {
+    "source": "built from the example's compose file",
+    "upstream_reference": null,
+    "upstream_digest": null,
+    "local_id": "sha256:6fc93a23e30d15a9c121bc4f67be4a522997d4cc2eac05f19e279afd69f94c84",
+    "size_bytes": 133418185,
+    "size_human": "133.42MB"
+  },
+  "measurements": {
+    "size_reduction_pct": 31.7,
+    "sbom_components": {
+      "original": 249,
+      "slim": 98
+    },
+    "vulnerabilities": {
+      "original": 567,
+      "slim": 152,
+      "original_by_severity": {
+        "Critical": 8,
+        "High": 78,
+        "Medium": 319,
+        "Low": 150,
+        "Negligible": 12
+      },
+      "slim_by_severity": {
+        "Critical": 8,
+        "High": 65,
+        "Medium": 62,
+        "Low": 17
+      }
+    },
+    "functional_tests": {
+      "original": "PASS (tests/specific/react-java-mysql/test.sh)",
+      "slim": "PASS (tests/specific/react-java-mysql/test.sh)"
+    },
+    "caveat": "Slim strips package metadata along with unused files, so part of the component and vulnerability drop is reduced scanner visibility rather than reduced exposure. See docs/methodology.md \u00a75."
+  },
+  "reproduce": {
+    "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
+    "commit": "7f738fc40a9def501b13abcebfb023e2f7149bef",
+    "worktree_clean": true,
+    "command": "pipeline/run-pipeline.sh react-java-mysql",
+    "compose_file": "vendor/awesome-compose/react-java-mysql/compose.yaml",
+    "compose_service": "backend",
+    "configuration": "examples/react-java-mysql/pipeline.env",
+    "test_script": "tests/specific/react-java-mysql/test.sh",
+    "artifacts": "artifacts/react-java-mysql/",
+    "tool_versions": {
+      "docker": "29.7.2",
+      "docker_compose": "5.5.0",
+      "mint": "1.41.8-1-g4b0d7e91",
+      "syft": "1.51.0",
+      "grype": "0.117.0"
+    }
+  }
+}

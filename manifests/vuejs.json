@@ -1,0 +1,67 @@
+{
+  "example": "vuejs",
+  "cluster": "Node/JS",
+  "generated_at": "2026-09-01T18:39:19Z",
+  "image": {
+    "reference": "ghcr.io/romanianexe/vuejs:slim",
+    "pushed": false,
+    "id": "sha256:ab7e5d96be35891e1adb5fafd9cb7d5a43575676beea7cf880a294a53e38a8ff",
+    "created": "2026-08-27T15:35:38.534660539+03:00",
+    "size_bytes": 44783449,
+    "size_human": "44.78MB"
+  },
+  "original": {
+    "source": "built from the example's compose file",
+    "upstream_reference": null,
+    "upstream_digest": null,
+    "local_id": "sha256:3e2789a8248f947e6a8d73b3f0487f62865d6c9a84174d2259f42d6b9fb1961b",
+    "size_bytes": 107651316,
+    "size_human": "107.65MB"
+  },
+  "measurements": {
+    "size_reduction_pct": 58.4,
+    "sbom_components": {
+      "original": 2183,
+      "slim": 590
+    },
+    "vulnerabilities": {
+      "original": 530,
+      "slim": 190,
+      "original_by_severity": {
+        "Critical": 32,
+        "High": 271,
+        "Medium": 188,
+        "Low": 39
+      },
+      "slim_by_severity": {
+        "High": 96,
+        "Medium": 64,
+        "Critical": 10,
+        "Low": 20
+      }
+    },
+    "functional_tests": {
+      "original": "PASS (tests/specific/vuejs/test.sh)",
+      "slim": "PASS (tests/specific/vuejs/test.sh)"
+    },
+    "caveat": "Slim strips package metadata along with unused files, so part of the component and vulnerability drop is reduced scanner visibility rather than reduced exposure. See docs/methodology.md \u00a75."
+  },
+  "reproduce": {
+    "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
+    "commit": "7f738fc40a9def501b13abcebfb023e2f7149bef",
+    "worktree_clean": true,
+    "command": "pipeline/run-pipeline.sh vuejs",
+    "compose_file": "vendor/awesome-compose/vuejs/compose.yaml",
+    "compose_service": "web",
+    "configuration": "examples/vuejs/pipeline.env",
+    "test_script": "tests/specific/vuejs/test.sh",
+    "artifacts": "artifacts/vuejs/",
+    "tool_versions": {
+      "docker": "29.7.2",
+      "docker_compose": "5.5.0",
+      "mint": "1.41.8-1-g4b0d7e91",
+      "syft": "1.51.0",
+      "grype": "0.117.0"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "example": "aspnet-mssql",
+  "cluster": ".NET",
+  "generated_at": "2026-09-01T18:39:10Z",
+  "image": {
+    "reference": "ghcr.io/romanianexe/aspnet-mssql:slim",
+    "pushed": false,
+    "id": "sha256:3e63bd3a7d49195561c61aa502171b29629715516e29ca28e0900423824106b3",
+    "created": "2026-08-23T16:21:34.991158994+03:00",
+    "size_bytes": 66138661,
+    "size_human": "66.14MB"
+  },
+  "original": {
+    "source": "built from the example's compose file",
+    "upstream_reference": null,
+    "upstream_digest": null,
+    "local_id": "sha256:af5c77a14bac564c941efaf9ae2f8bf18e87d6f6bc73f9c26dfb02d5106390a4",
+    "size_bytes": 85388703,
+    "size_human": "85.39MB"
+  },
+  "measurements": {
+    "size_reduction_pct": 22.5,
+    "sbom_components": {
+      "original": 100,
+      "slim": 8
+    },
+    "vulnerabilities": {
+      "original": 271,
+      "slim": 13,
+      "original_by_severity": {
+        "Critical": 10,
+        "High": 80,
+        "Medium": 87,
+        "Low": 24,
+        "Negligible": 66,
+        "Unknown": 4
+      },
+      "slim_by_severity": {
+        "Critical": 1,
+        "High": 10,
+        "Medium": 2
+      }
+    },
+    "functional_tests": {
+      "original": "PASS (tests/specific/aspnet-mssql/test.sh)",
+      "slim": "PASS (tests/specific/aspnet-mssql/test.sh)"
+    },
+    "caveat": "Slim strips package metadata along with unused files, so part of the component and vulnerability drop is reduced scanner visibility rather than reduced exposure. See docs/methodology.md \u00a75."
+  },
+  "reproduce": {
+    "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
+    "commit": "7f738fc40a9def501b13abcebfb023e2f7149bef",
+    "worktree_clean": true,
+    "command": "pipeline/run-pipeline.sh aspnet-mssql",
+    "compose_file": "vendor/awesome-compose/aspnet-mssql/compose.yaml",
+    "compose_service": "web",
+    "configuration": "examples/aspnet-mssql/pipeline.env",
+    "test_script": "tests/specific/aspnet-mssql/test.sh",
+    "artifacts": "artifacts/aspnet-mssql/",
+    "tool_versions": {
+      "docker": "29.7.2",
+      "docker_compose": "5.5.0",
+      "mint": "1.41.8-1-g4b0d7e91",
+      "syft": "1.51.0",
+      "grype": "0.117.0"
+    }
+  }
+}

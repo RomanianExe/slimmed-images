@@ -1,0 +1,60 @@
+{
+  "example": "react-nginx",
+  "cluster": "Node/JS",
+  "generated_at": "2026-09-01T18:39:17Z",
+  "image": {
+    "reference": "ghcr.io/romanianexe/react-nginx:slim",
+    "pushed": false,
+    "id": "sha256:8c5a657d0035fde841d68a62d6e1a35318f7f9089d620e50c0227418074bd4db",
+    "created": "2026-08-23T14:58:31.414103956+03:00",
+    "size_bytes": 4481029,
+    "size_human": "4.48MB"
+  },
+  "original": {
+    "source": "built from the example's compose file",
+    "upstream_reference": null,
+    "upstream_digest": null,
+    "local_id": "sha256:994199a9389623ec26a86d5ba38348d0f1c132bd5cd94dd70416d1dd612758bd",
+    "size_bytes": 26447276,
+    "size_human": "26.45MB"
+  },
+  "measurements": {
+    "size_reduction_pct": 83.1,
+    "sbom_components": {
+      "original": 71,
+      "slim": 1
+    },
+    "vulnerabilities": {
+      "original": 10,
+      "slim": 0,
+      "original_by_severity": {
+        "High": 4,
+        "Medium": 6
+      },
+      "slim_by_severity": {}
+    },
+    "functional_tests": {
+      "original": "PASS (tests/specific/react-nginx/test.sh)",
+      "slim": "PASS (tests/specific/react-nginx/test.sh)"
+    },
+    "caveat": "Slim strips package metadata along with unused files, so part of the component and vulnerability drop is reduced scanner visibility rather than reduced exposure. See docs/methodology.md \u00a75."
+  },
+  "reproduce": {
+    "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
+    "commit": "7f738fc40a9def501b13abcebfb023e2f7149bef",
+    "worktree_clean": true,
+    "command": "pipeline/run-pipeline.sh react-nginx",
+    "compose_file": "vendor/awesome-compose/react-nginx/compose.yaml",
+    "compose_service": "frontend",
+    "configuration": "examples/react-nginx/pipeline.env",
+    "test_script": "tests/specific/react-nginx/test.sh",
+    "artifacts": "artifacts/react-nginx/",
+    "tool_versions": {
+      "docker": "29.7.2",
+      "docker_compose": "5.5.0",
+      "mint": "1.41.8-1-g4b0d7e91",
+      "syft": "1.51.0",
+      "grype": "0.117.0"
+    }
+  }
+}

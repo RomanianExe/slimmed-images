@@ -1,0 +1,68 @@
+{
+  "example": "nginx-flask-mysql",
+  "cluster": "Python",
+  "generated_at": "2026-09-01T18:39:13Z",
+  "image": {
+    "reference": "ghcr.io/romanianexe/nginx-flask-mysql:slim",
+    "pushed": false,
+    "id": "sha256:4635092666463c9e7f5c21f00ee572cd1476be51218d0f6a2a04952cc11d0e5c",
+    "created": "2026-08-27T15:21:23.260237437+03:00",
+    "size_bytes": 11048492,
+    "size_human": "11.05MB"
+  },
+  "original": {
+    "source": "built from the example's compose file",
+    "upstream_reference": null,
+    "upstream_digest": null,
+    "local_id": "sha256:d12bd533756eeab09d16b186aa2e68e40a0adda4d84c19c71f7ea4ea18946f45",
+    "size_bytes": 24355600,
+    "size_human": "24.36MB"
+  },
+  "measurements": {
+    "size_reduction_pct": 54.6,
+    "sbom_components": {
+      "original": 80,
+      "slim": 2
+    },
+    "vulnerabilities": {
+      "original": 62,
+      "slim": 20,
+      "original_by_severity": {
+        "High": 24,
+        "Medium": 28,
+        "Unknown": 4,
+        "Low": 5,
+        "Negligible": 1
+      },
+      "slim_by_severity": {
+        "High": 5,
+        "Medium": 11,
+        "Low": 3,
+        "Negligible": 1
+      }
+    },
+    "functional_tests": {
+      "original": "PASS (tests/specific/nginx-flask-mysql/test.sh)",
+      "slim": "PASS (tests/specific/nginx-flask-mysql/test.sh)"
+    },
+    "caveat": "Slim strips package metadata along with unused files, so part of the component and vulnerability drop is reduced scanner visibility rather than reduced exposure. See docs/methodology.md \u00a75."
+  },
+  "reproduce": {
+    "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
+    "commit": "7f738fc40a9def501b13abcebfb023e2f7149bef",
+    "worktree_clean": true,
+    "command": "pipeline/run-pipeline.sh nginx-flask-mysql",
+    "compose_file": "vendor/awesome-compose/nginx-flask-mysql/compose.yaml",
+    "compose_service": "backend",
+    "configuration": "examples/nginx-flask-mysql/pipeline.env",
+    "test_script": "tests/specific/nginx-flask-mysql/test.sh",
+    "artifacts": "artifacts/nginx-flask-mysql/",
+    "tool_versions": {
+      "docker": "29.7.2",
+      "docker_compose": "5.5.0",
+      "mint": "1.41.8-1-g4b0d7e91",
+      "syft": "1.51.0",
+      "grype": "0.117.0"
+    }
+  }
+}

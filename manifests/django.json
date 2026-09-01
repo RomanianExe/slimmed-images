@@ -1,0 +1,69 @@
+{
+  "example": "django",
+  "cluster": "Python",
+  "generated_at": "2026-09-01T18:39:11Z",
+  "image": {
+    "reference": "ghcr.io/romanianexe/django:slim",
+    "pushed": false,
+    "id": "sha256:0337e5d7bda31a544dfddca8436382e609b145e91d224c601f793d4c6a604401",
+    "created": "2026-08-24T17:38:55.980733349+03:00",
+    "size_bytes": 11358428,
+    "size_human": "11.36MB"
+  },
+  "original": {
+    "source": "built from the example's compose file",
+    "upstream_reference": null,
+    "upstream_digest": null,
+    "local_id": "sha256:46d8072b0e0553eddb20b2bb3be620b49b67d7422f946995b4ba0071f147e999",
+    "size_bytes": 27718999,
+    "size_human": "27.72MB"
+  },
+  "measurements": {
+    "size_reduction_pct": 59.0,
+    "sbom_components": {
+      "original": 63,
+      "slim": 1
+    },
+    "vulnerabilities": {
+      "original": 178,
+      "slim": 71,
+      "original_by_severity": {
+        "Critical": 9,
+        "High": 63,
+        "Medium": 88,
+        "Low": 17,
+        "Negligible": 1
+      },
+      "slim_by_severity": {
+        "Medium": 36,
+        "High": 26,
+        "Critical": 1,
+        "Low": 7,
+        "Negligible": 1
+      }
+    },
+    "functional_tests": {
+      "original": "PASS (tests/specific/django/test.sh)",
+      "slim": "PASS (tests/specific/django/test.sh)"
+    },
+    "caveat": "Slim strips package metadata along with unused files, so part of the component and vulnerability drop is reduced scanner visibility rather than reduced exposure. See docs/methodology.md \u00a75."
+  },
+  "reproduce": {
+    "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
+    "commit": "7f738fc40a9def501b13abcebfb023e2f7149bef",
+    "worktree_clean": true,
+    "command": "pipeline/run-pipeline.sh django",
+    "compose_file": "vendor/awesome-compose/django/compose.yaml",
+    "compose_service": "web",
+    "configuration": "examples/django/pipeline.env",
+    "test_script": "tests/specific/django/test.sh",
+    "artifacts": "artifacts/django/",
+    "tool_versions": {
+      "docker": "29.7.2",
+      "docker_compose": "5.5.0",
+      "mint": "1.41.8-1-g4b0d7e91",
+      "syft": "1.51.0",
+      "grype": "0.117.0"
+    }
+  }
+}

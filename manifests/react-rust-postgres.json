@@ -1,0 +1,64 @@
+{
+  "example": "react-rust-postgres",
+  "cluster": "Rust",
+  "generated_at": "2026-09-01T18:39:17Z",
+  "image": {
+    "reference": "ghcr.io/romanianexe/react-rust-postgres:slim",
+    "pushed": false,
+    "id": "sha256:f50da9c8b98db9fade76d87b9d98dc014fafd7c15eb8695879fb52ca55b019a4",
+    "created": "2026-08-31T23:32:47.099993704+03:00",
+    "size_bytes": 4013483,
+    "size_human": "4.01MB"
+  },
+  "original": {
+    "source": "built from the example's compose file",
+    "upstream_reference": null,
+    "upstream_digest": null,
+    "local_id": "sha256:7ae49670d3b4da7e625eff93dac3ebd72cdcc8496b0454499d254ffeea3da9f9",
+    "size_bytes": 30717422,
+    "size_human": "30.72MB"
+  },
+  "measurements": {
+    "size_reduction_pct": 86.9,
+    "sbom_components": {
+      "original": 88,
+      "slim": 0
+    },
+    "vulnerabilities": {
+      "original": 177,
+      "slim": 0,
+      "original_by_severity": {
+        "Negligible": 58,
+        "High": 17,
+        "Medium": 63,
+        "Critical": 7,
+        "Low": 8,
+        "Unknown": 24
+      },
+      "slim_by_severity": {}
+    },
+    "functional_tests": {
+      "original": "PASS (tests/specific/react-rust-postgres/test.sh)",
+      "slim": "PASS (tests/specific/react-rust-postgres/test.sh)"
+    },
+    "caveat": "Slim strips package metadata along with unused files, so part of the component and vulnerability drop is reduced scanner visibility rather than reduced exposure. See docs/methodology.md \u00a75."
+  },
+  "reproduce": {
+    "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
+    "commit": "7f738fc40a9def501b13abcebfb023e2f7149bef",
+    "worktree_clean": true,
+    "command": "pipeline/run-pipeline.sh react-rust-postgres",
+    "compose_file": "vendor/awesome-compose/react-rust-postgres/compose.yaml",
+    "compose_service": "backend",
+    "configuration": "examples/react-rust-postgres/pipeline.env",
+    "test_script": "tests/specific/react-rust-postgres/test.sh",
+    "artifacts": "artifacts/react-rust-postgres/",
+    "tool_versions": {
+      "docker": "29.7.2",
+      "docker_compose": "5.5.0",
+      "mint": "1.41.8-1-g4b0d7e91",
+      "syft": "1.51.0",
+      "grype": "0.117.0"
+    }
+  }
+}

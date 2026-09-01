@@ -1,0 +1,67 @@
+{
+  "example": "nginx-golang",
+  "cluster": "Go",
+  "generated_at": "2026-09-01T18:39:14Z",
+  "image": {
+    "reference": "ghcr.io/romanianexe/nginx-golang:slim",
+    "pushed": false,
+    "id": "sha256:43e06107fd6f301dd0a489f9da3ad37613c63d548b99f7efe4fae91361051a65",
+    "created": "2026-08-28T12:45:51.008567087+03:00",
+    "size_bytes": 4804703,
+    "size_human": "4.80MB"
+  },
+  "original": {
+    "source": "built from the example's compose file",
+    "upstream_reference": null,
+    "upstream_digest": null,
+    "local_id": "sha256:2eb279bd1aed75cc0d97e218259b577b74e24d026f9ed3ccda0c1e11005f5406",
+    "size_bytes": 123401523,
+    "size_human": "123.40MB"
+  },
+  "measurements": {
+    "size_reduction_pct": 96.1,
+    "sbom_components": {
+      "original": 59,
+      "slim": 3
+    },
+    "vulnerabilities": {
+      "original": 574,
+      "slim": 43,
+      "original_by_severity": {
+        "High": 271,
+        "Critical": 38,
+        "Medium": 245,
+        "Low": 20
+      },
+      "slim_by_severity": {
+        "High": 25,
+        "Medium": 15,
+        "Critical": 2,
+        "Low": 1
+      }
+    },
+    "functional_tests": {
+      "original": "PASS (tests/specific/nginx-golang/test.sh)",
+      "slim": "PASS (tests/specific/nginx-golang/test.sh)"
+    },
+    "caveat": "Slim strips package metadata along with unused files, so part of the component and vulnerability drop is reduced scanner visibility rather than reduced exposure. See docs/methodology.md \u00a75."
+  },
+  "reproduce": {
+    "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
+    "commit": "7f738fc40a9def501b13abcebfb023e2f7149bef",
+    "worktree_clean": true,
+    "command": "pipeline/run-pipeline.sh nginx-golang",
+    "compose_file": "vendor/awesome-compose/nginx-golang/compose.yaml",
+    "compose_service": "backend",
+    "configuration": "examples/nginx-golang/pipeline.env",
+    "test_script": "tests/specific/nginx-golang/test.sh",
+    "artifacts": "artifacts/nginx-golang/",
+    "tool_versions": {
+      "docker": "29.7.2",
+      "docker_compose": "5.5.0",
+      "mint": "1.41.8-1-g4b0d7e91",
+      "syft": "1.51.0",
+      "grype": "0.117.0"
+    }
+  }
+}

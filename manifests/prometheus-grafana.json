@@ -1,0 +1,66 @@
+{
+  "example": "prometheus-grafana",
+  "cluster": "Go",
+  "generated_at": "2026-09-01T18:39:15Z",
+  "image": {
+    "reference": "ghcr.io/romanianexe/prometheus-grafana:slim",
+    "pushed": false,
+    "id": "sha256:07989a5d110e5830d2204297543dd9a035f0bcb7aae51f84310544af19db8178",
+    "created": "2026-09-01T00:44:21.556449815+03:00",
+    "size_bytes": 413283970,
+    "size_human": "413.28MB"
+  },
+  "original": {
+    "source": "prebuilt",
+    "upstream_reference": "grafana/grafana:latest",
+    "upstream_digest": "grafana/grafana@sha256:3fd54ae1214669f8355f065ec9f6445d5279a3d77095ab048ca045685272429b",
+    "local_id": "sha256:3fd54ae1214669f8355f065ec9f6445d5279a3d77095ab048ca045685272429b",
+    "size_bytes": 474098752,
+    "size_human": "474.10MB"
+  },
+  "measurements": {
+    "size_reduction_pct": 12.8,
+    "sbom_components": {
+      "original": 1791,
+      "slim": 1760
+    },
+    "vulnerabilities": {
+      "original": 178,
+      "slim": 157,
+      "original_by_severity": {
+        "High": 114,
+        "Medium": 59,
+        "Unknown": 4,
+        "Low": 1
+      },
+      "slim_by_severity": {
+        "High": 100,
+        "Medium": 54,
+        "Low": 3
+      }
+    },
+    "functional_tests": {
+      "original": "PASS (tests/specific/prometheus-grafana/test.sh)",
+      "slim": "PASS (tests/specific/prometheus-grafana/test.sh)"
+    },
+    "caveat": "Slim strips package metadata along with unused files, so part of the component and vulnerability drop is reduced scanner visibility rather than reduced exposure. See docs/methodology.md \u00a75."
+  },
+  "reproduce": {
+    "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
+    "commit": "7f738fc40a9def501b13abcebfb023e2f7149bef",
+    "worktree_clean": true,
+    "command": "pipeline/run-pipeline.sh prometheus-grafana",
+    "compose_file": "vendor/awesome-compose/prometheus-grafana/compose.yaml",
+    "compose_service": "grafana",
+    "configuration": "examples/prometheus-grafana/pipeline.env",
+    "test_script": "tests/specific/prometheus-grafana/test.sh",
+    "artifacts": "artifacts/prometheus-grafana/",
+    "tool_versions": {
+      "docker": "29.7.2",
+      "docker_compose": "5.5.0",
+      "mint": "1.41.8-1-g4b0d7e91",
+      "syft": "1.51.0",
+      "grype": "0.117.0"
+    }
+  }
+}

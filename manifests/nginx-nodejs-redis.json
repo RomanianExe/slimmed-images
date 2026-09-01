@@ -1,0 +1,67 @@
+{
+  "example": "nginx-nodejs-redis",
+  "cluster": "Node/JS",
+  "generated_at": "2026-09-01T18:39:14Z",
+  "image": {
+    "reference": "ghcr.io/romanianexe/nginx-nodejs-redis:slim",
+    "pushed": false,
+    "id": "sha256:aff7496bbf31bb1391aa3911cc79dc8bb92ff5db410dc5f804ec7896bee32fbf",
+    "created": "2026-08-27T15:19:13.647530408+03:00",
+    "size_bytes": 35234680,
+    "size_human": "35.23MB"
+  },
+  "original": {
+    "source": "built from the example's compose file",
+    "upstream_reference": null,
+    "upstream_digest": null,
+    "local_id": "sha256:1bf5cede98c48b9ae45b2cdf684d9b6aac50fb9be724770f817e443261f0a1c4",
+    "size_bytes": 42809197,
+    "size_human": "42.81MB"
+  },
+  "measurements": {
+    "size_reduction_pct": 17.7,
+    "sbom_components": {
+      "original": 512,
+      "slim": 58
+    },
+    "vulnerabilities": {
+      "original": 246,
+      "slim": 91,
+      "original_by_severity": {
+        "Critical": 17,
+        "High": 129,
+        "Medium": 82,
+        "Low": 18
+      },
+      "slim_by_severity": {
+        "High": 41,
+        "Medium": 31,
+        "Critical": 5,
+        "Low": 14
+      }
+    },
+    "functional_tests": {
+      "original": "PASS (tests/specific/nginx-nodejs-redis/test.sh)",
+      "slim": "PASS (tests/specific/nginx-nodejs-redis/test.sh)"
+    },
+    "caveat": "Slim strips package metadata along with unused files, so part of the component and vulnerability drop is reduced scanner visibility rather than reduced exposure. See docs/methodology.md \u00a75."
+  },
+  "reproduce": {
+    "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
+    "commit": "7f738fc40a9def501b13abcebfb023e2f7149bef",
+    "worktree_clean": true,
+    "command": "pipeline/run-pipeline.sh nginx-nodejs-redis",
+    "compose_file": "vendor/awesome-compose/nginx-nodejs-redis/compose.yaml",
+    "compose_service": "web1",
+    "configuration": "examples/nginx-nodejs-redis/pipeline.env",
+    "test_script": "tests/specific/nginx-nodejs-redis/test.sh",
+    "artifacts": "artifacts/nginx-nodejs-redis/",
+    "tool_versions": {
+      "docker": "29.7.2",
+      "docker_compose": "5.5.0",
+      "mint": "1.41.8-1-g4b0d7e91",
+      "syft": "1.51.0",
+      "grype": "0.117.0"
+    }
+  }
+}

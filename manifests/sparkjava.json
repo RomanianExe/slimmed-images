@@ -1,0 +1,66 @@
+{
+  "example": "sparkjava",
+  "cluster": "Java",
+  "generated_at": "2026-09-01T18:39:18Z",
+  "image": {
+    "reference": "ghcr.io/romanianexe/sparkjava:slim",
+    "pushed": false,
+    "id": "sha256:437763d4bfe5da84ffff46ba0f5c4aabe64495630eb635ee3150f5230180f392",
+    "created": "2026-08-23T15:17:30.22365407+03:00",
+    "size_bytes": 53958724,
+    "size_human": "53.96MB"
+  },
+  "original": {
+    "source": "built from the example's compose file",
+    "upstream_reference": null,
+    "upstream_digest": null,
+    "local_id": "sha256:c974ed8192f7f378ec54f03fc4ee577d09141a863e10f06aa00232b7e32bf6d8",
+    "size_bytes": 97444975,
+    "size_human": "97.44MB"
+  },
+  "measurements": {
+    "size_reduction_pct": 44.6,
+    "sbom_components": {
+      "original": 170,
+      "slim": 20
+    },
+    "vulnerabilities": {
+      "original": 462,
+      "slim": 44,
+      "original_by_severity": {
+        "High": 28,
+        "Medium": 281,
+        "Low": 141,
+        "Negligible": 12
+      },
+      "slim_by_severity": {
+        "High": 15,
+        "Medium": 19,
+        "Low": 10
+      }
+    },
+    "functional_tests": {
+      "original": "PASS (tests/specific/sparkjava/test.sh)",
+      "slim": "PASS (tests/specific/sparkjava/test.sh)"
+    },
+    "caveat": "Slim strips package metadata along with unused files, so part of the component and vulnerability drop is reduced scanner visibility rather than reduced exposure. See docs/methodology.md \u00a75."
+  },
+  "reproduce": {
+    "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
+    "commit": "7f738fc40a9def501b13abcebfb023e2f7149bef",
+    "worktree_clean": true,
+    "command": "pipeline/run-pipeline.sh sparkjava",
+    "compose_file": "vendor/awesome-compose/sparkjava/compose.yaml",
+    "compose_service": "sparkjava",
+    "configuration": "examples/sparkjava/pipeline.env",
+    "test_script": "tests/specific/sparkjava/test.sh",
+    "artifacts": "artifacts/sparkjava/",
+    "tool_versions": {
+      "docker": "29.7.2",
+      "docker_compose": "5.5.0",
+      "mint": "1.41.8-1-g4b0d7e91",
+      "syft": "1.51.0",
+      "grype": "0.117.0"
+    }
+  }
+}

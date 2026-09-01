@@ -1,0 +1,67 @@
+{
+  "example": "traefik-golang",
+  "cluster": "Go",
+  "generated_at": "2026-09-01T18:39:18Z",
+  "image": {
+    "reference": "ghcr.io/romanianexe/traefik-golang:slim",
+    "pushed": false,
+    "id": "sha256:323f722d7dece41f5f4c12c517923eaf8622ac497207fe97a5d42f109283bb9c",
+    "created": "2026-08-27T13:15:26.582067325+03:00",
+    "size_bytes": 3774391,
+    "size_human": "3.77MB"
+  },
+  "original": {
+    "source": "built from the example's compose file",
+    "upstream_reference": null,
+    "upstream_digest": null,
+    "local_id": "sha256:4983e72677684043140659d65df3f607bde3d4e62593f3c4cfc0c58bb4240bcd",
+    "size_bytes": 3557103,
+    "size_human": "3.56MB"
+  },
+  "measurements": {
+    "size_reduction_pct": -6.1,
+    "sbom_components": {
+      "original": 2,
+      "slim": 2
+    },
+    "vulnerabilities": {
+      "original": 40,
+      "slim": 40,
+      "original_by_severity": {
+        "High": 23,
+        "Medium": 14,
+        "Critical": 2,
+        "Low": 1
+      },
+      "slim_by_severity": {
+        "High": 23,
+        "Medium": 14,
+        "Critical": 2,
+        "Low": 1
+      }
+    },
+    "functional_tests": {
+      "original": "PASS (tests/specific/traefik-golang/test.sh)",
+      "slim": "PASS (tests/specific/traefik-golang/test.sh)"
+    },
+    "caveat": "Slim strips package metadata along with unused files, so part of the component and vulnerability drop is reduced scanner visibility rather than reduced exposure. See docs/methodology.md \u00a75."
+  },
+  "reproduce": {
+    "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
+    "commit": "7f738fc40a9def501b13abcebfb023e2f7149bef",
+    "worktree_clean": true,
+    "command": "pipeline/run-pipeline.sh traefik-golang",
+    "compose_file": "vendor/awesome-compose/traefik-golang/compose.yaml",
+    "compose_service": "backend",
+    "configuration": "examples/traefik-golang/pipeline.env",
+    "test_script": "tests/specific/traefik-golang/test.sh",
+    "artifacts": "artifacts/traefik-golang/",
+    "tool_versions": {
+      "docker": "29.7.2",
+      "docker_compose": "5.5.0",
+      "mint": "1.41.8-1-g4b0d7e91",
+      "syft": "1.51.0",
+      "grype": "0.117.0"
+    }
+  }
+}

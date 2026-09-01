@@ -1,0 +1,68 @@
+{
+  "example": "nextcloud-redis-mariadb",
+  "cluster": "PHP",
+  "generated_at": "2026-09-01T18:39:12Z",
+  "image": {
+    "reference": "ghcr.io/romanianexe/nextcloud-redis-mariadb:slim",
+    "pushed": false,
+    "id": "sha256:08c5ee8f8a7d47511d61942f1fe3cb3c0e92231b13fca1a381572db5bf3b3dc6",
+    "created": "2026-09-01T12:41:12.273520176+03:00",
+    "size_bytes": 407677919,
+    "size_human": "407.68MB"
+  },
+  "original": {
+    "source": "prebuilt",
+    "upstream_reference": "nextcloud:apache",
+    "upstream_digest": "nextcloud@sha256:0b8261f6335af6b95264ce893b4d645857638e0fa151b5ba620f25f377318ae1",
+    "local_id": "sha256:0b8261f6335af6b95264ce893b4d645857638e0fa151b5ba620f25f377318ae1",
+    "size_bytes": 555553556,
+    "size_human": "555.55MB"
+  },
+  "measurements": {
+    "size_reduction_pct": 26.6,
+    "sbom_components": {
+      "original": 459,
+      "slim": 170
+    },
+    "vulnerabilities": {
+      "original": 1261,
+      "slim": 7,
+      "original_by_severity": {
+        "Medium": 198,
+        "Negligible": 709,
+        "Low": 58,
+        "Critical": 63,
+        "High": 216,
+        "Unknown": 17
+      },
+      "slim_by_severity": {
+        "High": 4,
+        "Critical": 2,
+        "Low": 1
+      }
+    },
+    "functional_tests": {
+      "original": "PASS (tests/specific/nextcloud-redis-mariadb/test.sh)",
+      "slim": "PASS (tests/specific/nextcloud-redis-mariadb/test.sh)"
+    },
+    "caveat": "Slim strips package metadata along with unused files, so part of the component and vulnerability drop is reduced scanner visibility rather than reduced exposure. See docs/methodology.md \u00a75."
+  },
+  "reproduce": {
+    "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
+    "commit": "7f738fc40a9def501b13abcebfb023e2f7149bef",
+    "worktree_clean": true,
+    "command": "pipeline/run-pipeline.sh nextcloud-redis-mariadb",
+    "compose_file": "vendor/awesome-compose/nextcloud-redis-mariadb/compose.yaml",
+    "compose_service": "nc",
+    "configuration": "examples/nextcloud-redis-mariadb/pipeline.env",
+    "test_script": "tests/specific/nextcloud-redis-mariadb/test.sh",
+    "artifacts": "artifacts/nextcloud-redis-mariadb/",
+    "tool_versions": {
+      "docker": "29.7.2",
+      "docker_compose": "5.5.0",
+      "mint": "1.41.8-1-g4b0d7e91",
+      "syft": "1.51.0",
+      "grype": "0.117.0"
+    }
+  }
+}

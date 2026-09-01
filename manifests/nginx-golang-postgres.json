@@ -1,0 +1,67 @@
+{
+  "example": "nginx-golang-postgres",
+  "cluster": "Go",
+  "generated_at": "2026-09-01T18:39:14Z",
+  "image": {
+    "reference": "ghcr.io/romanianexe/nginx-golang-postgres:slim",
+    "pushed": false,
+    "id": "sha256:7671a907892ce83f468fa3bed3d8cba97b7839c9f063ebcb5c016a24f9528c99",
+    "created": "2026-08-27T14:04:57.34078738+03:00",
+    "size_bytes": 4516955,
+    "size_human": "4.52MB"
+  },
+  "original": {
+    "source": "built from the example's compose file",
+    "upstream_reference": null,
+    "upstream_digest": null,
+    "local_id": "sha256:ed52a69346d9e6fb73d85a8976a7c55fb386d94da8053e42b9461250c0284f54",
+    "size_bytes": 4251260,
+    "size_human": "4.25MB"
+  },
+  "measurements": {
+    "size_reduction_pct": -6.2,
+    "sbom_components": {
+      "original": 5,
+      "slim": 5
+    },
+    "vulnerabilities": {
+      "original": 42,
+      "slim": 42,
+      "original_by_severity": {
+        "High": 25,
+        "Medium": 14,
+        "Critical": 2,
+        "Low": 1
+      },
+      "slim_by_severity": {
+        "High": 25,
+        "Medium": 14,
+        "Critical": 2,
+        "Low": 1
+      }
+    },
+    "functional_tests": {
+      "original": "PASS (tests/specific/nginx-golang-postgres/test.sh)",
+      "slim": "PASS (tests/specific/nginx-golang-postgres/test.sh)"
+    },
+    "caveat": "Slim strips package metadata along with unused files, so part of the component and vulnerability drop is reduced scanner visibility rather than reduced exposure. See docs/methodology.md \u00a75."
+  },
+  "reproduce": {
+    "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
+    "commit": "7f738fc40a9def501b13abcebfb023e2f7149bef",
+    "worktree_clean": true,
+    "command": "pipeline/run-pipeline.sh nginx-golang-postgres",
+    "compose_file": "vendor/awesome-compose/nginx-golang-postgres/compose.yaml",
+    "compose_service": "backend",
+    "configuration": "examples/nginx-golang-postgres/pipeline.env",
+    "test_script": "tests/specific/nginx-golang-postgres/test.sh",
+    "artifacts": "artifacts/nginx-golang-postgres/",
+    "tool_versions": {
+      "docker": "29.7.2",
+      "docker_compose": "5.5.0",
+      "mint": "1.41.8-1-g4b0d7e91",
+      "syft": "1.51.0",
+      "grype": "0.117.0"
+    }
+  }
+}
