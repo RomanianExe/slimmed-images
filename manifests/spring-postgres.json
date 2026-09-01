@@ -1,10 +1,10 @@
 {
   "example": "spring-postgres",
   "cluster": "Java",
-  "generated_at": "2026-09-01T18:39:18Z",
+  "generated_at": "2026-09-01T22:03:30Z",
   "image": {
     "reference": "ghcr.io/romanianexe/spring-postgres:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:a911ab1a2ecd0dfe320042121abc451c32d42ca04c89617cb2152879f6b226fd",
     "created": "2026-08-27T13:32:30.839420366+03:00",
     "size_bytes": 91430096,
@@ -49,7 +49,7 @@
   },
   "reproduce": {
     "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
-    "commit": "7f738fc40a9def501b13abcebfb023e2f7149bef",
+    "commit": "ed812a5dc33bdae052b9259cdb7f04227409e751",
     "worktree_clean": true,
     "command": "pipeline/run-pipeline.sh spring-postgres",
     "compose_file": "vendor/awesome-compose/spring-postgres/compose.yaml",

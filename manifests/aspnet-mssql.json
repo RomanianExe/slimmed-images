@@ -1,10 +1,10 @@
 {
   "example": "aspnet-mssql",
   "cluster": ".NET",
-  "generated_at": "2026-09-01T18:39:10Z",
+  "generated_at": "2026-09-01T22:00:58Z",
   "image": {
     "reference": "ghcr.io/romanianexe/aspnet-mssql:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:3e63bd3a7d49195561c61aa502171b29629715516e29ca28e0900423824106b3",
     "created": "2026-08-23T16:21:34.991158994+03:00",
     "size_bytes": 66138661,
@@ -49,7 +49,7 @@
   },
   "reproduce": {
     "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
-    "commit": "7f738fc40a9def501b13abcebfb023e2f7149bef",
+    "commit": "ed812a5dc33bdae052b9259cdb7f04227409e751",
     "worktree_clean": true,
     "command": "pipeline/run-pipeline.sh aspnet-mssql",
     "compose_file": "vendor/awesome-compose/aspnet-mssql/compose.yaml",

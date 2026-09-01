@@ -17,11 +17,11 @@ it, and the tool versions used.
 
 29 images, generated 2026-09-01 by the pipeline's `pipeline/publish.sh`.
 
-> **29 of 29 image(s) are staged locally but not yet pushed.** The references in the table will not resolve until they are.
-
 | Example | Stack | Source | Size before | Size after | Change | Components | Vulns | Reference |
 |---|---|---|---:|---:|---:|---|---|---|
+| `nginx-golang-mysql` | Go | built | 123.39MB | 4.70MB | **-96.2%** | 62 → 6 | 582 → 41 | `ghcr.io/romanianexe/nginx-golang-mysql:slim` |
 | `nginx-golang` | Go | built | 123.40MB | 4.80MB | **-96.1%** | 59 → 3 | 574 → 43 | `ghcr.io/romanianexe/nginx-golang:slim` |
+| `nginx-golang-postgres` | Go | built | 123.48MB | 4.91MB | **-96.0%** | 61 → 5 | 583 → 42 | `ghcr.io/romanianexe/nginx-golang-postgres:slim` |
 | `react-rust-postgres` | Rust | built | 30.72MB | 4.01MB | **-86.9%** | 88 → 0 | 177 → 0 | `ghcr.io/romanianexe/react-rust-postgres:slim` |
 | `react-express-mysql` | Node/JS | built | 417.88MB | 55.61MB | **-86.7%** | 661 → 76 | 1791 → 24 | `ghcr.io/romanianexe/react-express-mysql:slim` |
 | `react-nginx` | Node/JS | built | 26.45MB | 4.48MB | **-83.1%** | 71 → 1 | 10 → 0 | `ghcr.io/romanianexe/react-nginx:slim` |
@@ -48,8 +48,6 @@ it, and the tool versions used.
 | `nginx-nodejs-redis` | Node/JS | built | 42.81MB | 35.23MB | **-17.7%** | 512 → 58 | 246 → 91 | `ghcr.io/romanianexe/nginx-nodejs-redis:slim` |
 | `prometheus-grafana` | Go | prebuilt | 474.10MB | 413.28MB | **-12.8%** | 1791 → 1760 | 178 → 157 | `ghcr.io/romanianexe/prometheus-grafana:slim` |
 | `traefik-golang` | Go | built | 3.56MB | 3.77MB | **+6.1%** | 2 → 2 | 40 → 40 | `ghcr.io/romanianexe/traefik-golang:slim` |
-| `nginx-golang-postgres` | Go | built | 4.25MB | 4.52MB | **+6.2%** | 5 → 5 | 42 → 42 | `ghcr.io/romanianexe/nginx-golang-postgres:slim` |
-| `nginx-golang-mysql` | Go | built | 4.16MB | 4.42MB | **+6.3%** | 6 → 6 | 41 → 41 | `ghcr.io/romanianexe/nginx-golang-mysql:slim` |
 
 ## Reading the numbers
 

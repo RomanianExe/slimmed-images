@@ -1,10 +1,10 @@
 {
   "example": "django",
   "cluster": "Python",
-  "generated_at": "2026-09-01T18:39:11Z",
+  "generated_at": "2026-09-01T22:01:02Z",
   "image": {
     "reference": "ghcr.io/romanianexe/django:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:0337e5d7bda31a544dfddca8436382e609b145e91d224c601f793d4c6a604401",
     "created": "2026-08-24T17:38:55.980733349+03:00",
     "size_bytes": 11358428,
@@ -50,7 +50,7 @@
   },
   "reproduce": {
     "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
-    "commit": "7f738fc40a9def501b13abcebfb023e2f7149bef",
+    "commit": "ed812a5dc33bdae052b9259cdb7f04227409e751",
     "worktree_clean": true,
     "command": "pipeline/run-pipeline.sh django",
     "compose_file": "vendor/awesome-compose/django/compose.yaml",

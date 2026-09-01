@@ -1,10 +1,10 @@
 {
   "example": "react-express-mysql",
   "cluster": "Node/JS",
-  "generated_at": "2026-09-01T18:39:16Z",
+  "generated_at": "2026-09-01T22:02:53Z",
   "image": {
     "reference": "ghcr.io/romanianexe/react-express-mysql:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:757ff65a337861ae84648680c83f1004eea3616085592d55a9732ffb775e7f75",
     "created": "2026-08-27T14:08:11.679341086+03:00",
     "size_bytes": 55605029,
@@ -50,7 +50,7 @@
   },
   "reproduce": {
     "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
-    "commit": "7f738fc40a9def501b13abcebfb023e2f7149bef",
+    "commit": "ed812a5dc33bdae052b9259cdb7f04227409e751",
     "worktree_clean": true,
     "command": "pipeline/run-pipeline.sh react-express-mysql",
     "compose_file": "vendor/awesome-compose/react-express-mysql/compose.yaml",

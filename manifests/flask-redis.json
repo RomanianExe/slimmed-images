@@ -1,10 +1,10 @@
 {
   "example": "flask-redis",
   "cluster": "Python",
-  "generated_at": "2026-09-01T18:39:11Z",
+  "generated_at": "2026-09-01T22:01:10Z",
   "image": {
     "reference": "ghcr.io/romanianexe/flask-redis:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:faa0f4b06038e9a54ab2733661796a8c9763d3a492fd884a893dae3af9471ca6",
     "created": "2026-08-28T12:44:58.225027424+03:00",
     "size_bytes": 11577522,
@@ -49,7 +49,7 @@
   },
   "reproduce": {
     "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
-    "commit": "7f738fc40a9def501b13abcebfb023e2f7149bef",
+    "commit": "ed812a5dc33bdae052b9259cdb7f04227409e751",
     "worktree_clean": true,
     "command": "pipeline/run-pipeline.sh flask-redis",
     "compose_file": "vendor/awesome-compose/flask-redis/compose.yaml",

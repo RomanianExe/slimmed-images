@@ -1,10 +1,10 @@
 {
   "example": "react-express-mongodb",
   "cluster": "Node/JS",
-  "generated_at": "2026-09-01T18:39:16Z",
+  "generated_at": "2026-09-01T22:02:48Z",
   "image": {
     "reference": "ghcr.io/romanianexe/react-express-mongodb:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:abde0f41144489270459d77c4b0afbed4806bc9f39522585d5b50b61d91596df",
     "created": "2026-08-27T13:28:10.425956586+03:00",
     "size_bytes": 45668317,
@@ -50,7 +50,7 @@
   },
   "reproduce": {
     "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
-    "commit": "7f738fc40a9def501b13abcebfb023e2f7149bef",
+    "commit": "ed812a5dc33bdae052b9259cdb7f04227409e751",
     "worktree_clean": true,
     "command": "pipeline/run-pipeline.sh react-express-mongodb",
     "compose_file": "vendor/awesome-compose/react-express-mongodb/compose.yaml",

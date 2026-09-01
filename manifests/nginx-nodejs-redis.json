@@ -1,10 +1,10 @@
 {
   "example": "nginx-nodejs-redis",
   "cluster": "Node/JS",
-  "generated_at": "2026-09-01T18:39:14Z",
+  "generated_at": "2026-09-01T22:02:13Z",
   "image": {
     "reference": "ghcr.io/romanianexe/nginx-nodejs-redis:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:aff7496bbf31bb1391aa3911cc79dc8bb92ff5db410dc5f804ec7896bee32fbf",
     "created": "2026-08-27T15:19:13.647530408+03:00",
     "size_bytes": 35234680,
@@ -48,7 +48,7 @@
   },
   "reproduce": {
     "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
-    "commit": "7f738fc40a9def501b13abcebfb023e2f7149bef",
+    "commit": "ed812a5dc33bdae052b9259cdb7f04227409e751",
     "worktree_clean": true,
     "command": "pipeline/run-pipeline.sh nginx-nodejs-redis",
     "compose_file": "vendor/awesome-compose/nginx-nodejs-redis/compose.yaml",

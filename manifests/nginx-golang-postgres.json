@@ -1,37 +1,38 @@
 {
   "example": "nginx-golang-postgres",
   "cluster": "Go",
-  "generated_at": "2026-09-01T18:39:14Z",
+  "generated_at": "2026-09-01T22:02:01Z",
   "image": {
     "reference": "ghcr.io/romanianexe/nginx-golang-postgres:slim",
-    "pushed": false,
-    "id": "sha256:7671a907892ce83f468fa3bed3d8cba97b7839c9f063ebcb5c016a24f9528c99",
-    "created": "2026-08-27T14:04:57.34078738+03:00",
-    "size_bytes": 4516955,
-    "size_human": "4.52MB"
+    "pushed": true,
+    "id": "sha256:68adaf1d6ba86bb5b2df5210ad53209611a146098f5a9e70443a6023f2ddcc21",
+    "created": "2026-09-01T21:59:08.43287897+03:00",
+    "size_bytes": 4910369,
+    "size_human": "4.91MB"
   },
   "original": {
     "source": "built from the example's compose file",
     "upstream_reference": null,
     "upstream_digest": null,
-    "local_id": "sha256:ed52a69346d9e6fb73d85a8976a7c55fb386d94da8053e42b9461250c0284f54",
-    "size_bytes": 4251260,
-    "size_human": "4.25MB"
+    "local_id": "sha256:2881ea19160c74a881ebae68810feef5d6641b14377382264170f9e4d58fbfeb",
+    "size_bytes": 123481582,
+    "size_human": "123.48MB"
   },
   "measurements": {
-    "size_reduction_pct": -6.2,
+    "size_reduction_pct": 96.0,
     "sbom_components": {
-      "original": 5,
+      "original": 61,
       "slim": 5
     },
     "vulnerabilities": {
-      "original": 42,
+      "original": 583,
       "slim": 42,
       "original_by_severity": {
-        "High": 25,
-        "Medium": 14,
-        "Critical": 2,
-        "Low": 1
+        "High": 277,
+        "Critical": 38,
+        "Medium": 246,
+        "Low": 20,
+        "Unknown": 2
       },
       "slim_by_severity": {
         "High": 25,
@@ -48,7 +49,7 @@
   },
   "reproduce": {
     "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
-    "commit": "7f738fc40a9def501b13abcebfb023e2f7149bef",
+    "commit": "ed812a5dc33bdae052b9259cdb7f04227409e751",
     "worktree_clean": true,
     "command": "pipeline/run-pipeline.sh nginx-golang-postgres",
     "compose_file": "vendor/awesome-compose/nginx-golang-postgres/compose.yaml",

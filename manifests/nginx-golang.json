@@ -1,10 +1,10 @@
 {
   "example": "nginx-golang",
   "cluster": "Go",
-  "generated_at": "2026-09-01T18:39:14Z",
+  "generated_at": "2026-09-01T22:02:04Z",
   "image": {
     "reference": "ghcr.io/romanianexe/nginx-golang:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:43e06107fd6f301dd0a489f9da3ad37613c63d548b99f7efe4fae91361051a65",
     "created": "2026-08-28T12:45:51.008567087+03:00",
     "size_bytes": 4804703,
@@ -48,7 +48,7 @@
   },
   "reproduce": {
     "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
-    "commit": "7f738fc40a9def501b13abcebfb023e2f7149bef",
+    "commit": "ed812a5dc33bdae052b9259cdb7f04227409e751",
     "worktree_clean": true,
     "command": "pipeline/run-pipeline.sh nginx-golang",
     "compose_file": "vendor/awesome-compose/nginx-golang/compose.yaml",

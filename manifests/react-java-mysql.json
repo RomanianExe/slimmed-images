@@ -1,10 +1,10 @@
 {
   "example": "react-java-mysql",
   "cluster": "Java",
-  "generated_at": "2026-09-01T18:39:16Z",
+  "generated_at": "2026-09-01T22:03:01Z",
   "image": {
     "reference": "ghcr.io/romanianexe/react-java-mysql:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:c7ea802d20fa7b8573773642f1b3bf5367060d6f913cb11c72662a9d9dc68abb",
     "created": "2026-08-28T12:47:32.304809922+03:00",
     "size_bytes": 91150344,
@@ -49,7 +49,7 @@
   },
   "reproduce": {
     "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
-    "commit": "7f738fc40a9def501b13abcebfb023e2f7149bef",
+    "commit": "ed812a5dc33bdae052b9259cdb7f04227409e751",
     "worktree_clean": true,
     "command": "pipeline/run-pipeline.sh react-java-mysql",
     "compose_file": "vendor/awesome-compose/react-java-mysql/compose.yaml",

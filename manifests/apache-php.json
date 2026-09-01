@@ -1,10 +1,10 @@
 {
   "example": "apache-php",
   "cluster": "PHP",
-  "generated_at": "2026-09-01T18:39:10Z",
+  "generated_at": "2026-09-01T22:00:50Z",
   "image": {
     "reference": "ghcr.io/romanianexe/apache-php:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:c5adfe7fc57652ad1145fb5b4c9612b1d00b123fb07158fde8811026d5ecfec8",
     "created": "2026-08-23T13:03:53.902852882+03:00",
     "size_bytes": 33723017,
@@ -50,7 +50,7 @@
   },
   "reproduce": {
     "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
-    "commit": "7f738fc40a9def501b13abcebfb023e2f7149bef",
+    "commit": "ed812a5dc33bdae052b9259cdb7f04227409e751",
     "worktree_clean": true,
     "command": "pipeline/run-pipeline.sh apache-php",
     "compose_file": "vendor/awesome-compose/apache-php/compose.yaml",

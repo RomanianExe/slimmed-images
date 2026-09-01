@@ -1,10 +1,10 @@
 {
   "example": "nginx-aspnet-mysql",
   "cluster": ".NET",
-  "generated_at": "2026-09-01T18:39:13Z",
+  "generated_at": "2026-09-01T22:01:42Z",
   "image": {
     "reference": "ghcr.io/romanianexe/nginx-aspnet-mysql:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:5be22b7f496c96798139116303917a97e84dcc1417b3c9d50c3ec7882b45061c",
     "created": "2026-08-27T14:26:04.454537731+03:00",
     "size_bytes": 48999990,
@@ -47,7 +47,7 @@
   },
   "reproduce": {
     "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
-    "commit": "7f738fc40a9def501b13abcebfb023e2f7149bef",
+    "commit": "ed812a5dc33bdae052b9259cdb7f04227409e751",
     "worktree_clean": true,
     "command": "pipeline/run-pipeline.sh nginx-aspnet-mysql",
     "compose_file": "vendor/awesome-compose/nginx-aspnet-mysql/compose.yaml",

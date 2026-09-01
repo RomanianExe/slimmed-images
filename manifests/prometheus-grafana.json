@@ -1,10 +1,10 @@
 {
   "example": "prometheus-grafana",
   "cluster": "Go",
-  "generated_at": "2026-09-01T18:39:15Z",
+  "generated_at": "2026-09-01T22:02:42Z",
   "image": {
     "reference": "ghcr.io/romanianexe/prometheus-grafana:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:07989a5d110e5830d2204297543dd9a035f0bcb7aae51f84310544af19db8178",
     "created": "2026-09-01T00:44:21.556449815+03:00",
     "size_bytes": 413283970,
@@ -47,7 +47,7 @@
   },
   "reproduce": {
     "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
-    "commit": "7f738fc40a9def501b13abcebfb023e2f7149bef",
+    "commit": "ed812a5dc33bdae052b9259cdb7f04227409e751",
     "worktree_clean": true,
     "command": "pipeline/run-pipeline.sh prometheus-grafana",
     "compose_file": "vendor/awesome-compose/prometheus-grafana/compose.yaml",

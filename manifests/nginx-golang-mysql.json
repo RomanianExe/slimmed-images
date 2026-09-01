@@ -1,37 +1,38 @@
 {
   "example": "nginx-golang-mysql",
   "cluster": "Go",
-  "generated_at": "2026-09-01T18:39:13Z",
+  "generated_at": "2026-09-01T22:01:56Z",
   "image": {
     "reference": "ghcr.io/romanianexe/nginx-golang-mysql:slim",
-    "pushed": false,
-    "id": "sha256:e9b15ad2468cffa8a36122989dde141c2eb790b09b3538763175d34db8aaec71",
-    "created": "2026-08-27T14:02:08.87499104+03:00",
-    "size_bytes": 4419230,
-    "size_human": "4.42MB"
+    "pushed": true,
+    "id": "sha256:ca8aec4387eec2289bc565af3540be801cc10c196e5871e1f653e150713e15d4",
+    "created": "2026-09-01T21:57:21.677484566+03:00",
+    "size_bytes": 4696217,
+    "size_human": "4.70MB"
   },
   "original": {
     "source": "built from the example's compose file",
     "upstream_reference": null,
     "upstream_digest": null,
-    "local_id": "sha256:e6d0a582f3b10f4b66bb6b0834b86228e6599722b827e8c5f8caee1c36112648",
-    "size_bytes": 4156598,
-    "size_human": "4.16MB"
+    "local_id": "sha256:dbfc178868e8b39ecd41b84bf43d9243741f9639a96101c93b9fa8b185942b7b",
+    "size_bytes": 123393935,
+    "size_human": "123.39MB"
   },
   "measurements": {
-    "size_reduction_pct": -6.3,
+    "size_reduction_pct": 96.2,
     "sbom_components": {
-      "original": 6,
+      "original": 62,
       "slim": 6
     },
     "vulnerabilities": {
-      "original": 41,
+      "original": 582,
       "slim": 41,
       "original_by_severity": {
-        "High": 24,
-        "Medium": 14,
-        "Critical": 2,
-        "Low": 1
+        "High": 276,
+        "Critical": 38,
+        "Medium": 246,
+        "Low": 20,
+        "Unknown": 2
       },
       "slim_by_severity": {
         "High": 24,
@@ -48,7 +49,7 @@
   },
   "reproduce": {
     "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
-    "commit": "7f738fc40a9def501b13abcebfb023e2f7149bef",
+    "commit": "ed812a5dc33bdae052b9259cdb7f04227409e751",
     "worktree_clean": true,
     "command": "pipeline/run-pipeline.sh nginx-golang-mysql",
     "compose_file": "vendor/awesome-compose/nginx-golang-mysql/compose.yaml",

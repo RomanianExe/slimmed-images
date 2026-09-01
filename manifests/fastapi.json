@@ -1,10 +1,10 @@
 {
   "example": "fastapi",
   "cluster": "Python",
-  "generated_at": "2026-09-01T18:39:11Z",
+  "generated_at": "2026-09-01T22:01:06Z",
   "image": {
     "reference": "ghcr.io/romanianexe/fastapi:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:d02d6c456a08b356efa16ca7f689f4e81dfac3082a10f2545bef1c8c8d9b5760",
     "created": "2026-08-27T13:23:34.218472143+03:00",
     "size_bytes": 21448485,
@@ -50,7 +50,7 @@
   },
   "reproduce": {
     "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
-    "commit": "7f738fc40a9def501b13abcebfb023e2f7149bef",
+    "commit": "ed812a5dc33bdae052b9259cdb7f04227409e751",
     "worktree_clean": true,
     "command": "pipeline/run-pipeline.sh fastapi",
     "compose_file": "vendor/awesome-compose/fastapi/compose.yaml",

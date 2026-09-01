@@ -1,10 +1,10 @@
 {
   "example": "wordpress-mysql",
   "cluster": "PHP",
-  "generated_at": "2026-09-01T18:39:19Z",
+  "generated_at": "2026-09-01T22:03:50Z",
   "image": {
     "reference": "ghcr.io/romanianexe/wordpress-mysql:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:021879fe08ca5ba0bac7fede88be6cc7c8da51a34086bda404818681dc670fb2",
     "created": "2026-09-01T00:47:44.874524861+03:00",
     "size_bytes": 140202190,
@@ -47,7 +47,7 @@
   },
   "reproduce": {
     "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
-    "commit": "7f738fc40a9def501b13abcebfb023e2f7149bef",
+    "commit": "ed812a5dc33bdae052b9259cdb7f04227409e751",
     "worktree_clean": true,
     "command": "pipeline/run-pipeline.sh wordpress-mysql",
     "compose_file": "vendor/awesome-compose/wordpress-mysql/compose.yaml",

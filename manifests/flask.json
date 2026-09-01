@@ -1,10 +1,10 @@
 {
   "example": "flask",
   "cluster": "Python",
-  "generated_at": "2026-09-01T18:39:12Z",
+  "generated_at": "2026-09-01T22:01:14Z",
   "image": {
     "reference": "ghcr.io/romanianexe/flask:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:83e69639895729f5b0a1cae9b2d6f02818302ff4b343aae832e73e37aa1ba163",
     "created": "2026-08-28T12:44:10.333226082+03:00",
     "size_bytes": 9787365,
@@ -14,7 +14,7 @@
     "source": "built from the example's compose file",
     "upstream_reference": null,
     "upstream_digest": null,
-    "local_id": "sha256:1e32214f40fb8d8453da75d9926119db7ea543fd823a705af0974dad1bee9995",
+    "local_id": "sha256:eb51e98ef8b237e9ba3540a5a0fb5cba151f9685c9c5e5980d0c56463a4fb0ae",
     "size_bytes": 23798617,
     "size_human": "23.80MB"
   },
@@ -49,7 +49,7 @@
   },
   "reproduce": {
     "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
-    "commit": "7f738fc40a9def501b13abcebfb023e2f7149bef",
+    "commit": "ed812a5dc33bdae052b9259cdb7f04227409e751",
     "worktree_clean": true,
     "command": "pipeline/run-pipeline.sh flask",
     "compose_file": "vendor/awesome-compose/flask/compose.yaml",

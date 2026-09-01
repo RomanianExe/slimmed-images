@@ -1,10 +1,10 @@
 {
   "example": "react-nginx",
   "cluster": "Node/JS",
-  "generated_at": "2026-09-01T18:39:17Z",
+  "generated_at": "2026-09-01T22:03:04Z",
   "image": {
     "reference": "ghcr.io/romanianexe/react-nginx:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:8c5a657d0035fde841d68a62d6e1a35318f7f9089d620e50c0227418074bd4db",
     "created": "2026-08-23T14:58:31.414103956+03:00",
     "size_bytes": 4481029,
@@ -41,7 +41,7 @@
   },
   "reproduce": {
     "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
-    "commit": "7f738fc40a9def501b13abcebfb023e2f7149bef",
+    "commit": "ed812a5dc33bdae052b9259cdb7f04227409e751",
     "worktree_clean": true,
     "command": "pipeline/run-pipeline.sh react-nginx",
     "compose_file": "vendor/awesome-compose/react-nginx/compose.yaml",
