@@ -1,10 +1,10 @@
 {
   "example": "django",
   "cluster": "Python",
-  "generated_at": "2026-09-13T19:22:50Z",
+  "generated_at": "2026-09-13T19:34:27Z",
   "image": {
     "reference": "ghcr.io/georgetornea/django:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:ad27305dea1af0f16b4f7143b8d36f7000563570262506f3211db48f794081ac",
     "created": "2026-09-09T22:12:05.626408724+03:00",
     "size_bytes": 28031488,

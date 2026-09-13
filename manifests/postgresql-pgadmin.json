@@ -1,10 +1,10 @@
 {
   "example": "postgresql-pgadmin",
   "cluster": "Python",
-  "generated_at": "2026-09-13T19:23:20Z",
+  "generated_at": "2026-09-13T19:38:46Z",
   "image": {
     "reference": "ghcr.io/georgetornea/postgresql-pgadmin:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:83d038e1616feda157b3373c6bc78707db481d47c65fba90ee6db1f9b50fb82a",
     "created": "2026-09-09T23:11:31.024716472+03:00",
     "size_bytes": 135214080,

@@ -1,10 +1,10 @@
 {
   "example": "nginx-wsgi-flask",
   "cluster": "Python",
-  "generated_at": "2026-09-13T19:23:16Z",
+  "generated_at": "2026-09-13T19:38:07Z",
   "image": {
     "reference": "ghcr.io/georgetornea/nginx-wsgi-flask:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:3eae5103cdbb9d243ada31dfe0fdbe04fb630bc157179274bcbb0c4091333485",
     "created": "2026-09-09T23:02:44.835080744+03:00",
     "size_bytes": 19171328,

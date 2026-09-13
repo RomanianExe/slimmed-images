@@ -1,10 +1,10 @@
 {
   "example": "nginx-golang",
   "cluster": "Go",
-  "generated_at": "2026-09-13T19:23:13Z",
+  "generated_at": "2026-09-13T19:37:51Z",
   "image": {
     "reference": "ghcr.io/georgetornea/nginx-golang:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:fe12492d94b329139544ed1820b1250f8c82541f4f5d3b252d9e0cecf4702d86",
     "created": "2026-09-09T23:01:08.112204924+03:00",
     "size_bytes": 8186368,

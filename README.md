@@ -17,8 +17,6 @@ it, and the tool versions used.
 
 34 images, generated 2026-09-13 by the pipeline's `pipeline/publish.sh`.
 
-> **34 of 34 image(s) are staged locally but not yet pushed.** The references in the table will not resolve until they are.
-
 | Example | Stack | Source | Size before | Size after | Change | Components | Vulns | Reference |
 |---|---|---|---:|---:|---:|---|---|---|
 | `nginx-golang-mysql` | Go | built | 348.12MB | 8.11MB | **-97.7%** | 62 → 6 | 582 → 41 | `ghcr.io/georgetornea/nginx-golang-mysql:slim` |

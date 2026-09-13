@@ -1,10 +1,10 @@
 {
   "example": "wordpress-mysql",
   "cluster": "PHP",
-  "generated_at": "2026-09-13T19:23:41Z",
+  "generated_at": "2026-09-13T19:41:10Z",
   "image": {
     "reference": "ghcr.io/georgetornea/wordpress-mysql:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:bfcc377e47e3e52e6b8314d4cbec892c2c4b8a112660b296fa89a6fc77493425",
     "created": "2026-09-09T23:44:58.036897674+03:00",
     "size_bytes": 360488448,

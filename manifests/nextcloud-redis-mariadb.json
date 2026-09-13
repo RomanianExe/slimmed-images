@@ -1,10 +1,10 @@
 {
   "example": "nextcloud-redis-mariadb",
   "cluster": "PHP",
-  "generated_at": "2026-09-13T19:23:02Z",
+  "generated_at": "2026-09-13T19:37:05Z",
   "image": {
     "reference": "ghcr.io/georgetornea/nextcloud-redis-mariadb:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:b927dc4cda6a5295fb70543b95b91ade6ca906d2fd2b66fd67150944eb9e8cfd",
     "created": "2026-09-10T01:49:45.623607324+03:00",
     "size_bytes": 1604991488,

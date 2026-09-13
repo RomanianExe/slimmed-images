@@ -1,10 +1,10 @@
 {
   "example": "nginx-flask-mysql",
   "cluster": "Python",
-  "generated_at": "2026-09-13T19:23:07Z",
+  "generated_at": "2026-09-13T19:37:29Z",
   "image": {
     "reference": "ghcr.io/georgetornea/nginx-flask-mysql:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:121478855bf10aecd67e4f6b89b2d462eb800f632e9b1878b31e1334ac6f8de3",
     "created": "2026-09-09T22:56:35.349329312+03:00",
     "size_bytes": 26728448,

@@ -1,10 +1,10 @@
 {
   "example": "react-java-mysql",
   "cluster": "Java",
-  "generated_at": "2026-09-13T19:23:27Z",
+  "generated_at": "2026-09-13T19:39:52Z",
   "image": {
     "reference": "ghcr.io/georgetornea/react-java-mysql:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:87def4a156b38b2d5e6a6a45cc183984dbafa0461165ae3037275bcefadabc4b",
     "created": "2026-09-09T23:26:13.283947187+03:00",
     "size_bytes": 173442048,

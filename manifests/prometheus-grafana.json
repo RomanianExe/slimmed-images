@@ -1,10 +1,10 @@
 {
   "example": "prometheus-grafana",
   "cluster": "Go",
-  "generated_at": "2026-09-13T19:23:22Z",
+  "generated_at": "2026-09-13T19:39:21Z",
   "image": {
     "reference": "ghcr.io/georgetornea/prometheus-grafana:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:464d1e9854ccc049958078917d13d164498ef6997b0dabf3ca3b098b806dedaa",
     "created": "2026-09-09T23:15:55.589872832+03:00",
     "size_bytes": 998405632,

@@ -1,10 +1,10 @@
 {
   "example": "react-nginx",
   "cluster": "Node/JS",
-  "generated_at": "2026-09-13T19:23:29Z",
+  "generated_at": "2026-09-13T19:39:59Z",
   "image": {
     "reference": "ghcr.io/georgetornea/react-nginx:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:a05db446115f7d85b2ddd6e3815012a603bfde4e8147b4ddf3d849094e0156a6",
     "created": "2026-09-09T23:27:37.512618974+03:00",
     "size_bytes": 9392640,

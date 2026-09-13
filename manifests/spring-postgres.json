@@ -1,10 +1,10 @@
 {
   "example": "spring-postgres",
   "cluster": "Java",
-  "generated_at": "2026-09-13T19:23:36Z",
+  "generated_at": "2026-09-13T19:40:38Z",
   "image": {
     "reference": "ghcr.io/georgetornea/spring-postgres:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:b897d0fcfa9a5c2a0d6a19817211af4bbbbcc693691fd277b9ee59aa3d688c16",
     "created": "2026-09-09T23:36:53.632661287+03:00",
     "size_bytes": 173874688,

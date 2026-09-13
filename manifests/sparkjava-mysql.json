@@ -1,10 +1,10 @@
 {
   "example": "sparkjava-mysql",
   "cluster": "Java",
-  "generated_at": "2026-09-13T19:23:33Z",
+  "generated_at": "2026-09-13T19:40:17Z",
   "image": {
     "reference": "ghcr.io/georgetornea/sparkjava-mysql:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:ec37897fc35cea728061faa26b0aeac258f3b826e328ee584e7748e77e909824",
     "created": "2026-09-09T23:32:04.833034737+03:00",
     "size_bytes": 138684928,

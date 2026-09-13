@@ -1,10 +1,10 @@
 {
   "example": "nginx-nodejs-redis",
   "cluster": "Node/JS",
-  "generated_at": "2026-09-13T19:23:14Z",
+  "generated_at": "2026-09-13T19:37:59Z",
   "image": {
     "reference": "ghcr.io/georgetornea/nginx-nodejs-redis:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:cca00dee1e219dc8daf9b204960eb39bcbffc729fd0fab95687f4720b6a5fa4e",
     "created": "2026-09-09T23:01:50.869549912+03:00",
     "size_bytes": 80753152,

@@ -1,10 +1,10 @@
 {
   "example": "angular",
   "cluster": "Node/JS",
-  "generated_at": "2026-09-13T19:22:44Z",
+  "generated_at": "2026-09-13T19:34:01Z",
   "image": {
     "reference": "ghcr.io/georgetornea/angular:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:35da7e5ea5298e1bc0a05619b07e597182fa6021449285a02f6300dba05cf75c",
     "created": "2026-09-09T22:09:14.446385762+03:00",
     "size_bytes": 200330752,

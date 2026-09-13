@@ -1,10 +1,10 @@
 {
   "example": "minecraft",
   "cluster": "Java",
-  "generated_at": "2026-09-13T19:22:59Z",
+  "generated_at": "2026-09-13T19:35:21Z",
   "image": {
     "reference": "ghcr.io/georgetornea/minecraft:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:b7549f8fcc99463970fb6e84b1b63fed7f8df785b1f41f21758fb29b1b6911fb",
     "created": "2026-09-10T02:27:50.740693475+03:00",
     "size_bytes": 257743360,

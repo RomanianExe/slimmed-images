@@ -1,10 +1,10 @@
 {
   "example": "elasticsearch-logstash-kibana",
   "cluster": "Java/Node",
-  "generated_at": "2026-09-13T19:22:51Z",
+  "generated_at": "2026-09-13T19:34:45Z",
   "image": {
     "reference": "ghcr.io/georgetornea/elasticsearch-logstash-kibana:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:64593e8b3573963c302a4a1f3e1d2b0457273df28c86917805ffd8ca2037265c",
     "created": "2026-09-09T22:18:29.279209711+03:00",
     "size_bytes": 374818304,

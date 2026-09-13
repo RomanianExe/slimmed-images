@@ -1,10 +1,10 @@
 {
   "example": "flask",
   "cluster": "Python",
-  "generated_at": "2026-09-13T19:22:57Z",
+  "generated_at": "2026-09-13T19:35:08Z",
   "image": {
     "reference": "ghcr.io/georgetornea/flask:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:3c4aecdf9f006e8fb157255f083a656e55cb6be8f5ffc8bf7279b75f7374c168",
     "created": "2026-09-09T22:23:03.564700712+03:00",
     "size_bytes": 23323136,

@@ -1,10 +1,10 @@
 {
   "example": "nextcloud-postgres",
   "cluster": "PHP",
-  "generated_at": "2026-09-13T19:23:00Z",
+  "generated_at": "2026-09-13T19:36:13Z",
   "image": {
     "reference": "ghcr.io/georgetornea/nextcloud-postgres:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:ef0121225e04552974e6d54c91a154d7d5a6a49cc5fc684fbc31b6a67250863e",
     "created": "2026-09-10T01:40:26.356086223+03:00",
     "size_bytes": 1604986368,

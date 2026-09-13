@@ -1,10 +1,10 @@
 {
   "example": "nginx-flask-mongo",
   "cluster": "Python",
-  "generated_at": "2026-09-13T19:23:06Z",
+  "generated_at": "2026-09-13T19:37:21Z",
   "image": {
     "reference": "ghcr.io/georgetornea/nginx-flask-mongo:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:21bdd7ebf328a179c45b381e07c027d6d89ab8d593dbd47066ac0142c650173c",
     "created": "2026-09-09T22:55:27.208573566+03:00",
     "size_bytes": 29252096,

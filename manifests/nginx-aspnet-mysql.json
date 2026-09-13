@@ -1,10 +1,10 @@
 {
   "example": "nginx-aspnet-mysql",
   "cluster": ".NET",
-  "generated_at": "2026-09-13T19:23:04Z",
+  "generated_at": "2026-09-13T19:37:15Z",
   "image": {
     "reference": "ghcr.io/georgetornea/nginx-aspnet-mysql:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:eb5acdd433ba9ee0135df31ddce229cf886649cfb70547f68eab39f13bfd327c",
     "created": "2026-09-09T22:53:56.884890337+03:00",
     "size_bytes": 100414464,

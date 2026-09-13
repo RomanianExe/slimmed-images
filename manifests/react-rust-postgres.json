@@ -1,10 +1,10 @@
 {
   "example": "react-rust-postgres",
   "cluster": "Rust",
-  "generated_at": "2026-09-13T19:23:31Z",
+  "generated_at": "2026-09-13T19:40:06Z",
   "image": {
     "reference": "ghcr.io/georgetornea/react-rust-postgres:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:776a40dfe5d7b2274b2d73bafece9ace813bc35ac3fb991348df61d4ccc0c013",
     "created": "2026-09-09T23:29:21.739727889+03:00",
     "size_bytes": 9876480,

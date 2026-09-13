@@ -1,10 +1,10 @@
 {
   "example": "aspnet-mssql",
   "cluster": ".NET",
-  "generated_at": "2026-09-13T19:22:48Z",
+  "generated_at": "2026-09-13T19:34:19Z",
   "image": {
     "reference": "ghcr.io/georgetornea/aspnet-mssql:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:c120cd910fe5e83b1d9fdad96d90eac261299d794c8378a30b4d729166437064",
     "created": "2026-09-09T22:11:17.858530433+03:00",
     "size_bytes": 136998912,

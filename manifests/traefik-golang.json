@@ -1,10 +1,10 @@
 {
   "example": "traefik-golang",
   "cluster": "Go",
-  "generated_at": "2026-09-13T19:23:38Z",
+  "generated_at": "2026-09-13T19:40:44Z",
   "image": {
     "reference": "ghcr.io/georgetornea/traefik-golang:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:312df20a8e5f78881f2845dc575eb82be890be317a6d3d4fe5a932a9f51ea716",
     "created": "2026-09-09T23:38:04.022403323+03:00",
     "size_bytes": 6243840,

@@ -1,10 +1,10 @@
 {
   "example": "fastapi",
   "cluster": "Python",
-  "generated_at": "2026-09-13T19:22:53Z",
+  "generated_at": "2026-09-13T19:34:53Z",
   "image": {
     "reference": "ghcr.io/georgetornea/fastapi:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:8d5da966bb05018347f4c9fa4fcc3929c779e735fbd807fc9acb36d295b351bd",
     "created": "2026-09-09T22:21:54.591221964+03:00",
     "size_bytes": 55171584,

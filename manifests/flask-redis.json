@@ -1,10 +1,10 @@
 {
   "example": "flask-redis",
   "cluster": "Python",
-  "generated_at": "2026-09-13T19:22:55Z",
+  "generated_at": "2026-09-13T19:35:00Z",
   "image": {
     "reference": "ghcr.io/georgetornea/flask-redis:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:a47a94595f3663d9c237f0102778e2ccd38bcce54720fa65a39c470f2372cd30",
     "created": "2026-09-09T22:22:31.210804561+03:00",
     "size_bytes": 28742144,

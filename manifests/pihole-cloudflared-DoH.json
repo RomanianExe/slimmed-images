@@ -1,10 +1,10 @@
 {
   "example": "pihole-cloudflared-DoH",
   "cluster": "C",
-  "generated_at": "2026-09-13T19:23:17Z",
+  "generated_at": "2026-09-13T19:38:15Z",
   "image": {
     "reference": "ghcr.io/georgetornea/pihole-cloudflared-doh:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:7e154db2803d19b5fa13af9e65873ad91e0f5dd497d5666489d165f4b74eccef",
     "created": "2026-09-09T21:43:44.410722621Z",
     "size_bytes": 60469760,

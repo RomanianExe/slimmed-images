@@ -1,10 +1,10 @@
 {
   "example": "nginx-golang-postgres",
   "cluster": "Go",
-  "generated_at": "2026-09-13T19:23:11Z",
+  "generated_at": "2026-09-13T19:37:44Z",
   "image": {
     "reference": "ghcr.io/georgetornea/nginx-golang-postgres:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:aa5114c08f8a00df8f69689716317a2026a1d488f9d8692e91551d5f853b0a8f",
     "created": "2026-09-09T23:00:05.546757476+03:00",
     "size_bytes": 8600064,

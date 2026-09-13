@@ -1,10 +1,10 @@
 {
   "example": "vuejs",
   "cluster": "Node/JS",
-  "generated_at": "2026-09-13T19:23:40Z",
+  "generated_at": "2026-09-13T19:40:55Z",
   "image": {
     "reference": "ghcr.io/georgetornea/vuejs:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:58dfc4b7f33106fda1847aa77a50321c86d5dcc0b46fafaec8fa19c70128df1e",
     "created": "2026-09-09T23:39:32.283652502+03:00",
     "size_bytes": 120688640,

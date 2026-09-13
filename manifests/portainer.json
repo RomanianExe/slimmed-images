@@ -1,10 +1,10 @@
 {
   "example": "portainer",
   "cluster": "Go",
-  "generated_at": "2026-09-13T19:23:19Z",
+  "generated_at": "2026-09-13T19:38:34Z",
   "image": {
     "reference": "ghcr.io/georgetornea/portainer:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:ab651e30e080526f7052021aa12dbf27d4ed86407d3104bf6a26952815b6b3c3",
     "created": "2026-09-09T23:08:34.3718971+03:00",
     "size_bytes": 106153984,

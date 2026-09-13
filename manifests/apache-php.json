@@ -1,10 +1,10 @@
 {
   "example": "apache-php",
   "cluster": "PHP",
-  "generated_at": "2026-09-13T19:22:46Z",
+  "generated_at": "2026-09-13T19:34:10Z",
   "image": {
     "reference": "ghcr.io/georgetornea/apache-php:slim",
-    "pushed": false,
+    "pushed": true,
     "id": "sha256:250c0f27ca7b6730d2f25f4da7de60c71cf5744380303de68a85476f634242cc",
     "created": "2026-09-09T22:10:28.099839028+03:00",
     "size_bytes": 77460480,
