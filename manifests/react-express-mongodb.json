@@ -1,45 +1,46 @@
 {
   "example": "react-express-mongodb",
   "cluster": "Node/JS",
-  "generated_at": "2026-09-01T22:02:48Z",
+  "generated_at": "2026-09-13T19:39:30Z",
   "image": {
-    "reference": "ghcr.io/romanianexe/react-express-mongodb:slim",
+    "reference": "ghcr.io/georgetornea/react-express-mongodb:slim",
     "pushed": true,
-    "id": "sha256:abde0f41144489270459d77c4b0afbed4806bc9f39522585d5b50b61d91596df",
-    "created": "2026-08-27T13:28:10.425956586+03:00",
-    "size_bytes": 45668317,
-    "size_human": "45.67MB"
+    "id": "sha256:3b00dd1be3de667744150ef3c61b3e8509a87b350bc22c0d7317a63b2de2c3e8",
+    "created": "2026-09-09T23:19:25.038054852+03:00",
+    "size_bytes": 109594112,
+    "size_human": "109.59MB"
   },
   "original": {
     "source": "built from the example's compose file",
     "upstream_reference": null,
     "upstream_digest": null,
-    "local_id": "sha256:282b48b500c68537499a88e3ef59fba82679b8feea77f4602efa5326a3bb8504",
-    "size_bytes": 89926726,
-    "size_human": "89.93MB"
+    "local_id": "sha256:f6d33c16f8158c6bc426d30e6808c22148b446872e2c5a3d1335797bdc8c98ed",
+    "size_bytes": 261621760,
+    "size_human": "261.62MB"
   },
   "measurements": {
-    "size_reduction_pct": 49.2,
+    "size_metric": "oci_uncompressed_layer_bytes",
+    "size_reduction_pct": 58.10971075188853,
     "sbom_components": {
       "original": 512,
       "slim": 146
     },
     "vulnerabilities": {
-      "original": 244,
-      "slim": 74,
+      "original": 247,
+      "slim": 76,
       "original_by_severity": {
-        "High": 86,
+        "High": 87,
         "Critical": 5,
         "Negligible": 62,
-        "Low": 29,
-        "Medium": 58,
+        "Low": 30,
+        "Medium": 59,
         "Unknown": 4
       },
       "slim_by_severity": {
         "High": 33,
         "Critical": 4,
-        "Low": 17,
-        "Medium": 20
+        "Low": 18,
+        "Medium": 21
       }
     },
     "functional_tests": {
@@ -50,7 +51,7 @@
   },
   "reproduce": {
     "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
-    "commit": "ed812a5dc33bdae052b9259cdb7f04227409e751",
+    "commit": "7fd6f843550855952ebb306cd545652f7f9db882",
     "worktree_clean": true,
     "command": "pipeline/run-pipeline.sh react-express-mongodb",
     "compose_file": "vendor/awesome-compose/react-express-mongodb/compose.yaml",
@@ -59,11 +60,11 @@
     "test_script": "tests/specific/react-express-mongodb/test.sh",
     "artifacts": "artifacts/react-express-mongodb/",
     "tool_versions": {
-      "docker": "29.7.2",
-      "docker_compose": "5.5.0",
+      "docker": "29.7.1",
+      "docker_compose": "5.4.0",
       "mint": "1.41.8-1-g4b0d7e91",
-      "syft": "1.51.0",
-      "grype": "0.117.0"
+      "syft": "1.51.1",
+      "grype": "0.118.0"
     }
   }
 }

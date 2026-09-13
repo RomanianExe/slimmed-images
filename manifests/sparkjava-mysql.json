@@ -1,42 +1,43 @@
 {
   "example": "sparkjava-mysql",
   "cluster": "Java",
-  "generated_at": "2026-09-01T22:03:14Z",
+  "generated_at": "2026-09-13T19:40:17Z",
   "image": {
-    "reference": "ghcr.io/romanianexe/sparkjava-mysql:slim",
+    "reference": "ghcr.io/georgetornea/sparkjava-mysql:slim",
     "pushed": true,
-    "id": "sha256:7ae45e2313acd906173fc1cc72b60b0dc86e71fba93f90dae77b57eacfb8db83",
-    "created": "2026-08-24T21:37:19.124683295+03:00",
-    "size_bytes": 57766179,
-    "size_human": "57.77MB"
+    "id": "sha256:ec37897fc35cea728061faa26b0aeac258f3b826e328ee584e7748e77e909824",
+    "created": "2026-09-09T23:32:04.833034737+03:00",
+    "size_bytes": 138684928,
+    "size_human": "138.68MB"
   },
   "original": {
     "source": "built from the example's compose file",
     "upstream_reference": null,
     "upstream_digest": null,
-    "local_id": "sha256:04bcbd33707703ddf730458d64825748dd679cc6a60c235612704e27d2808299",
-    "size_bytes": 101159442,
-    "size_human": "101.16MB"
+    "local_id": "sha256:a59a10089d4a413aa4e768366536e8f710db1e0050654c388c541763101042d5",
+    "size_bytes": 278189056,
+    "size_human": "278.19MB"
   },
   "measurements": {
-    "size_reduction_pct": 42.9,
+    "size_metric": "oci_uncompressed_layer_bytes",
+    "size_reduction_pct": 50.14723799918283,
     "sbom_components": {
       "original": 172,
       "slim": 22
     },
     "vulnerabilities": {
-      "original": 468,
-      "slim": 50,
+      "original": 525,
+      "slim": 53,
       "original_by_severity": {
         "High": 33,
-        "Medium": 282,
-        "Low": 141,
+        "Medium": 347,
+        "Low": 133,
         "Negligible": 12
       },
       "slim_by_severity": {
         "High": 20,
-        "Medium": 20,
-        "Low": 10
+        "Medium": 22,
+        "Low": 11
       }
     },
     "functional_tests": {
@@ -47,7 +48,7 @@
   },
   "reproduce": {
     "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
-    "commit": "ed812a5dc33bdae052b9259cdb7f04227409e751",
+    "commit": "7fd6f843550855952ebb306cd545652f7f9db882",
     "worktree_clean": true,
     "command": "pipeline/run-pipeline.sh sparkjava-mysql",
     "compose_file": "vendor/awesome-compose/sparkjava-mysql/compose.yaml",
@@ -56,11 +57,11 @@
     "test_script": "tests/specific/sparkjava-mysql/test.sh",
     "artifacts": "artifacts/sparkjava-mysql/",
     "tool_versions": {
-      "docker": "29.7.2",
-      "docker_compose": "5.5.0",
+      "docker": "29.7.1",
+      "docker_compose": "5.4.0",
       "mint": "1.41.8-1-g4b0d7e91",
-      "syft": "1.51.0",
-      "grype": "0.117.0"
+      "syft": "1.51.1",
+      "grype": "0.118.0"
     }
   }
 }

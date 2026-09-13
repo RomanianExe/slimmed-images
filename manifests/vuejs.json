@@ -1,43 +1,44 @@
 {
   "example": "vuejs",
   "cluster": "Node/JS",
-  "generated_at": "2026-09-01T22:03:39Z",
+  "generated_at": "2026-09-13T19:40:55Z",
   "image": {
-    "reference": "ghcr.io/romanianexe/vuejs:slim",
+    "reference": "ghcr.io/georgetornea/vuejs:slim",
     "pushed": true,
-    "id": "sha256:ab7e5d96be35891e1adb5fafd9cb7d5a43575676beea7cf880a294a53e38a8ff",
-    "created": "2026-08-27T15:35:38.534660539+03:00",
-    "size_bytes": 44783449,
-    "size_human": "44.78MB"
+    "id": "sha256:58dfc4b7f33106fda1847aa77a50321c86d5dcc0b46fafaec8fa19c70128df1e",
+    "created": "2026-09-09T23:39:32.283652502+03:00",
+    "size_bytes": 120688640,
+    "size_human": "120.69MB"
   },
   "original": {
     "source": "built from the example's compose file",
     "upstream_reference": null,
     "upstream_digest": null,
-    "local_id": "sha256:3e2789a8248f947e6a8d73b3f0487f62865d6c9a84174d2259f42d6b9fb1961b",
-    "size_bytes": 107651316,
-    "size_human": "107.65MB"
+    "local_id": "sha256:154e8cd20a216926a35b9b772e8e79e8dea93e5ca248eee03c4bdea98532ee5c",
+    "size_bytes": 369480192,
+    "size_human": "369.48MB"
   },
   "measurements": {
-    "size_reduction_pct": 58.4,
+    "size_metric": "oci_uncompressed_layer_bytes",
+    "size_reduction_pct": 67.33555881664151,
     "sbom_components": {
       "original": 2183,
       "slim": 590
     },
     "vulnerabilities": {
-      "original": 530,
-      "slim": 190,
+      "original": 554,
+      "slim": 194,
       "original_by_severity": {
         "Critical": 32,
-        "High": 271,
-        "Medium": 188,
-        "Low": 39
+        "High": 283,
+        "Medium": 195,
+        "Low": 44
       },
       "slim_by_severity": {
-        "High": 96,
+        "High": 97,
         "Medium": 64,
         "Critical": 10,
-        "Low": 20
+        "Low": 23
       }
     },
     "functional_tests": {
@@ -48,7 +49,7 @@
   },
   "reproduce": {
     "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
-    "commit": "ed812a5dc33bdae052b9259cdb7f04227409e751",
+    "commit": "7fd6f843550855952ebb306cd545652f7f9db882",
     "worktree_clean": true,
     "command": "pipeline/run-pipeline.sh vuejs",
     "compose_file": "vendor/awesome-compose/vuejs/compose.yaml",
@@ -57,11 +58,11 @@
     "test_script": "tests/specific/vuejs/test.sh",
     "artifacts": "artifacts/vuejs/",
     "tool_versions": {
-      "docker": "29.7.2",
-      "docker_compose": "5.5.0",
+      "docker": "29.7.1",
+      "docker_compose": "5.4.0",
       "mint": "1.41.8-1-g4b0d7e91",
-      "syft": "1.51.0",
-      "grype": "0.117.0"
+      "syft": "1.51.1",
+      "grype": "0.118.0"
     }
   }
 }

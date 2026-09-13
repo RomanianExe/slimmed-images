@@ -1,41 +1,42 @@
 {
   "example": "react-java-mysql",
   "cluster": "Java",
-  "generated_at": "2026-09-01T22:03:01Z",
+  "generated_at": "2026-09-13T19:39:52Z",
   "image": {
-    "reference": "ghcr.io/romanianexe/react-java-mysql:slim",
+    "reference": "ghcr.io/georgetornea/react-java-mysql:slim",
     "pushed": true,
-    "id": "sha256:c7ea802d20fa7b8573773642f1b3bf5367060d6f913cb11c72662a9d9dc68abb",
-    "created": "2026-08-28T12:47:32.304809922+03:00",
-    "size_bytes": 91150344,
-    "size_human": "91.15MB"
+    "id": "sha256:87def4a156b38b2d5e6a6a45cc183984dbafa0461165ae3037275bcefadabc4b",
+    "created": "2026-09-09T23:26:13.283947187+03:00",
+    "size_bytes": 173442048,
+    "size_human": "173.44MB"
   },
   "original": {
     "source": "built from the example's compose file",
     "upstream_reference": null,
     "upstream_digest": null,
-    "local_id": "sha256:6fc93a23e30d15a9c121bc4f67be4a522997d4cc2eac05f19e279afd69f94c84",
-    "size_bytes": 133418185,
-    "size_human": "133.42MB"
+    "local_id": "sha256:b66be62063bdc65a9a7f6e6a53347e607058f3a6db1bae37f3ad96e8c4580214",
+    "size_bytes": 314521600,
+    "size_human": "314.52MB"
   },
   "measurements": {
-    "size_reduction_pct": 31.7,
+    "size_metric": "oci_uncompressed_layer_bytes",
+    "size_reduction_pct": 44.8552824352922,
     "sbom_components": {
       "original": 249,
       "slim": 98
     },
     "vulnerabilities": {
-      "original": 567,
-      "slim": 152,
+      "original": 627,
+      "slim": 155,
       "original_by_severity": {
-        "Critical": 8,
+        "Critical": 11,
         "High": 78,
-        "Medium": 319,
-        "Low": 150,
+        "Medium": 387,
+        "Low": 139,
         "Negligible": 12
       },
       "slim_by_severity": {
-        "Critical": 8,
+        "Critical": 11,
         "High": 65,
         "Medium": 62,
         "Low": 17
@@ -49,7 +50,7 @@
   },
   "reproduce": {
     "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
-    "commit": "ed812a5dc33bdae052b9259cdb7f04227409e751",
+    "commit": "7fd6f843550855952ebb306cd545652f7f9db882",
     "worktree_clean": true,
     "command": "pipeline/run-pipeline.sh react-java-mysql",
     "compose_file": "vendor/awesome-compose/react-java-mysql/compose.yaml",
@@ -58,11 +59,11 @@
     "test_script": "tests/specific/react-java-mysql/test.sh",
     "artifacts": "artifacts/react-java-mysql/",
     "tool_versions": {
-      "docker": "29.7.2",
-      "docker_compose": "5.5.0",
+      "docker": "29.7.1",
+      "docker_compose": "5.4.0",
       "mint": "1.41.8-1-g4b0d7e91",
-      "syft": "1.51.0",
-      "grype": "0.117.0"
+      "syft": "1.51.1",
+      "grype": "0.118.0"
     }
   }
 }

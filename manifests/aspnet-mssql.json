@@ -1,25 +1,26 @@
 {
   "example": "aspnet-mssql",
   "cluster": ".NET",
-  "generated_at": "2026-09-01T22:00:58Z",
+  "generated_at": "2026-09-13T19:34:19Z",
   "image": {
-    "reference": "ghcr.io/romanianexe/aspnet-mssql:slim",
+    "reference": "ghcr.io/georgetornea/aspnet-mssql:slim",
     "pushed": true,
-    "id": "sha256:3e63bd3a7d49195561c61aa502171b29629715516e29ca28e0900423824106b3",
-    "created": "2026-08-23T16:21:34.991158994+03:00",
-    "size_bytes": 66138661,
-    "size_human": "66.14MB"
+    "id": "sha256:c120cd910fe5e83b1d9fdad96d90eac261299d794c8378a30b4d729166437064",
+    "created": "2026-09-09T22:11:17.858530433+03:00",
+    "size_bytes": 136998912,
+    "size_human": "137.00MB"
   },
   "original": {
     "source": "built from the example's compose file",
     "upstream_reference": null,
     "upstream_digest": null,
-    "local_id": "sha256:af5c77a14bac564c941efaf9ae2f8bf18e87d6f6bc73f9c26dfb02d5106390a4",
-    "size_bytes": 85388703,
-    "size_human": "85.39MB"
+    "local_id": "sha256:676bb0ec0c4fa64a0010a13dbe74eb4a090c3aae1107ae3d47f5351f9f65d1ff",
+    "size_bytes": 211922944,
+    "size_human": "211.92MB"
   },
   "measurements": {
-    "size_reduction_pct": 22.5,
+    "size_metric": "oci_uncompressed_layer_bytes",
+    "size_reduction_pct": 35.35437484296179,
     "sbom_components": {
       "original": 100,
       "slim": 8
@@ -28,16 +29,16 @@
       "original": 271,
       "slim": 13,
       "original_by_severity": {
-        "Critical": 10,
         "High": 80,
         "Medium": 87,
-        "Low": 24,
+        "Critical": 10,
         "Negligible": 66,
+        "Low": 24,
         "Unknown": 4
       },
       "slim_by_severity": {
-        "Critical": 1,
         "High": 10,
+        "Critical": 1,
         "Medium": 2
       }
     },
@@ -49,7 +50,7 @@
   },
   "reproduce": {
     "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
-    "commit": "ed812a5dc33bdae052b9259cdb7f04227409e751",
+    "commit": "7fd6f843550855952ebb306cd545652f7f9db882",
     "worktree_clean": true,
     "command": "pipeline/run-pipeline.sh aspnet-mssql",
     "compose_file": "vendor/awesome-compose/aspnet-mssql/compose.yaml",
@@ -58,11 +59,11 @@
     "test_script": "tests/specific/aspnet-mssql/test.sh",
     "artifacts": "artifacts/aspnet-mssql/",
     "tool_versions": {
-      "docker": "29.7.2",
-      "docker_compose": "5.5.0",
+      "docker": "29.7.1",
+      "docker_compose": "5.4.0",
       "mint": "1.41.8-1-g4b0d7e91",
-      "syft": "1.51.0",
-      "grype": "0.117.0"
+      "syft": "1.51.1",
+      "grype": "0.118.0"
     }
   }
 }

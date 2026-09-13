@@ -1,0 +1,67 @@
+{
+  "example": "pihole-cloudflared-DoH",
+  "cluster": "C",
+  "generated_at": "2026-09-13T19:38:15Z",
+  "image": {
+    "reference": "ghcr.io/georgetornea/pihole-cloudflared-doh:slim",
+    "pushed": true,
+    "id": "sha256:7e154db2803d19b5fa13af9e65873ad91e0f5dd497d5666489d165f4b74eccef",
+    "created": "2026-09-09T21:43:44.410722621Z",
+    "size_bytes": 60469760,
+    "size_human": "60.47MB"
+  },
+  "original": {
+    "source": "prebuilt",
+    "upstream_reference": "pihole/pihole:2026.07.2@sha256:f7d1be836e3bc608b56d82fc9904f5a831cdfbc0dc9c6d58f94e4c985c70038b",
+    "upstream_digest": "pihole/pihole@sha256:f7d1be836e3bc608b56d82fc9904f5a831cdfbc0dc9c6d58f94e4c985c70038b",
+    "local_id": "sha256:27b410ff85b3449158c1ed568b4078c6037463952ad9939b673b28ba13bd9aa7",
+    "size_bytes": 101292544,
+    "size_human": "101.29MB"
+  },
+  "measurements": {
+    "size_metric": "oci_uncompressed_layer_bytes",
+    "size_reduction_pct": 40.301864666366754,
+    "sbom_components": {
+      "original": 94,
+      "slim": 5
+    },
+    "vulnerabilities": {
+      "original": 112,
+      "slim": 23,
+      "original_by_severity": {
+        "High": 58,
+        "Critical": 8,
+        "Medium": 44,
+        "Unknown": 2
+      },
+      "slim_by_severity": {
+        "High": 7,
+        "Medium": 14,
+        "Low": 2
+      }
+    },
+    "functional_tests": {
+      "original": "PASS (tests/specific/pihole-cloudflared-DoH/test.sh)",
+      "slim": "PASS (tests/specific/pihole-cloudflared-DoH/test.sh)"
+    },
+    "caveat": "Slim strips package metadata along with unused files, so part of the component and vulnerability drop is reduced scanner visibility rather than reduced exposure. See docs/methodology.md \u00a75."
+  },
+  "reproduce": {
+    "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
+    "commit": "7fd6f843550855952ebb306cd545652f7f9db882",
+    "worktree_clean": true,
+    "command": "pipeline/run-pipeline.sh pihole-cloudflared-DoH",
+    "compose_file": "vendor/awesome-compose/pihole-cloudflared-DoH/compose.yaml",
+    "compose_service": "pihole",
+    "configuration": "examples/pihole-cloudflared-DoH/pipeline.env",
+    "test_script": "tests/specific/pihole-cloudflared-DoH/test.sh",
+    "artifacts": "artifacts/pihole-cloudflared-DoH/",
+    "tool_versions": {
+      "docker": "29.7.1",
+      "docker_compose": "5.4.0",
+      "mint": "1.41.8-1-g4b0d7e91",
+      "syft": "1.51.1",
+      "grype": "0.118.0"
+    }
+  }
+}

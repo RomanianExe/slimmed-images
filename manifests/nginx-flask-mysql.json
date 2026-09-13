@@ -1,43 +1,44 @@
 {
   "example": "nginx-flask-mysql",
   "cluster": "Python",
-  "generated_at": "2026-09-01T22:01:52Z",
+  "generated_at": "2026-09-13T19:37:29Z",
   "image": {
-    "reference": "ghcr.io/romanianexe/nginx-flask-mysql:slim",
+    "reference": "ghcr.io/georgetornea/nginx-flask-mysql:slim",
     "pushed": true,
-    "id": "sha256:4635092666463c9e7f5c21f00ee572cd1476be51218d0f6a2a04952cc11d0e5c",
-    "created": "2026-08-27T15:21:23.260237437+03:00",
-    "size_bytes": 11048492,
-    "size_human": "11.05MB"
+    "id": "sha256:121478855bf10aecd67e4f6b89b2d462eb800f632e9b1878b31e1334ac6f8de3",
+    "created": "2026-09-09T22:56:35.349329312+03:00",
+    "size_bytes": 26728448,
+    "size_human": "26.73MB"
   },
   "original": {
     "source": "built from the example's compose file",
     "upstream_reference": null,
     "upstream_digest": null,
-    "local_id": "sha256:d12bd533756eeab09d16b186aa2e68e40a0adda4d84c19c71f7ea4ea18946f45",
-    "size_bytes": 24355600,
-    "size_human": "24.36MB"
+    "local_id": "sha256:5b0ff195cc38b319efa8812c2e8cc48f4d57199f79632dba8fdc8dd38a8531a0",
+    "size_bytes": 76188160,
+    "size_human": "76.19MB"
   },
   "measurements": {
-    "size_reduction_pct": 54.6,
+    "size_metric": "oci_uncompressed_layer_bytes",
+    "size_reduction_pct": 64.91784550250327,
     "sbom_components": {
       "original": 80,
       "slim": 2
     },
     "vulnerabilities": {
-      "original": 62,
-      "slim": 20,
+      "original": 52,
+      "slim": 21,
       "original_by_severity": {
-        "High": 24,
+        "High": 14,
         "Medium": 28,
-        "Unknown": 4,
-        "Low": 5,
-        "Negligible": 1
+        "Low": 6,
+        "Negligible": 1,
+        "Unknown": 3
       },
       "slim_by_severity": {
         "High": 5,
         "Medium": 11,
-        "Low": 3,
+        "Low": 4,
         "Negligible": 1
       }
     },
@@ -49,7 +50,7 @@
   },
   "reproduce": {
     "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
-    "commit": "ed812a5dc33bdae052b9259cdb7f04227409e751",
+    "commit": "7fd6f843550855952ebb306cd545652f7f9db882",
     "worktree_clean": true,
     "command": "pipeline/run-pipeline.sh nginx-flask-mysql",
     "compose_file": "vendor/awesome-compose/nginx-flask-mysql/compose.yaml",
@@ -58,11 +59,11 @@
     "test_script": "tests/specific/nginx-flask-mysql/test.sh",
     "artifacts": "artifacts/nginx-flask-mysql/",
     "tool_versions": {
-      "docker": "29.7.2",
-      "docker_compose": "5.5.0",
+      "docker": "29.7.1",
+      "docker_compose": "5.4.0",
       "mint": "1.41.8-1-g4b0d7e91",
-      "syft": "1.51.0",
-      "grype": "0.117.0"
+      "syft": "1.51.1",
+      "grype": "0.118.0"
     }
   }
 }

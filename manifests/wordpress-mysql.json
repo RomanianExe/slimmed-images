@@ -1,39 +1,40 @@
 {
   "example": "wordpress-mysql",
   "cluster": "PHP",
-  "generated_at": "2026-09-01T22:03:50Z",
+  "generated_at": "2026-09-13T19:41:10Z",
   "image": {
-    "reference": "ghcr.io/romanianexe/wordpress-mysql:slim",
+    "reference": "ghcr.io/georgetornea/wordpress-mysql:slim",
     "pushed": true,
-    "id": "sha256:021879fe08ca5ba0bac7fede88be6cc7c8da51a34086bda404818681dc670fb2",
-    "created": "2026-09-01T00:47:44.874524861+03:00",
-    "size_bytes": 140202190,
-    "size_human": "140.20MB"
+    "id": "sha256:bfcc377e47e3e52e6b8314d4cbec892c2c4b8a112660b296fa89a6fc77493425",
+    "created": "2026-09-09T23:44:58.036897674+03:00",
+    "size_bytes": 360488448,
+    "size_human": "360.49MB"
   },
   "original": {
     "source": "prebuilt",
-    "upstream_reference": "wordpress:latest",
+    "upstream_reference": "wordpress:7.1.0-apache@sha256:5a93c470ae8220fddf71f6ebe3bc94e615ddc2ae4d9810f795b830fb11c41a17",
     "upstream_digest": "wordpress@sha256:5a93c470ae8220fddf71f6ebe3bc94e615ddc2ae4d9810f795b830fb11c41a17",
-    "local_id": "sha256:5a93c470ae8220fddf71f6ebe3bc94e615ddc2ae4d9810f795b830fb11c41a17",
-    "size_bytes": 274729632,
-    "size_human": "274.73MB"
+    "local_id": "sha256:e3540baa2411c82f563c5fc89899790c4e539bd6a5428a0a2e9d59c742382451",
+    "size_bytes": 801263104,
+    "size_human": "801.26MB"
   },
   "measurements": {
-    "size_reduction_pct": 49.0,
+    "size_metric": "oci_uncompressed_layer_bytes",
+    "size_reduction_pct": 55.009977846178224,
     "sbom_components": {
       "original": 273,
       "slim": 18
     },
     "vulnerabilities": {
-      "original": 1045,
+      "original": 1115,
       "slim": 4,
       "original_by_severity": {
-        "Negligible": 671,
-        "High": 114,
-        "Critical": 45,
-        "Low": 31,
-        "Medium": 160,
-        "Unknown": 24
+        "Negligible": 665,
+        "High": 165,
+        "Critical": 55,
+        "Low": 42,
+        "Medium": 161,
+        "Unknown": 27
       },
       "slim_by_severity": {
         "High": 4
@@ -47,7 +48,7 @@
   },
   "reproduce": {
     "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
-    "commit": "ed812a5dc33bdae052b9259cdb7f04227409e751",
+    "commit": "7fd6f843550855952ebb306cd545652f7f9db882",
     "worktree_clean": true,
     "command": "pipeline/run-pipeline.sh wordpress-mysql",
     "compose_file": "vendor/awesome-compose/wordpress-mysql/compose.yaml",
@@ -56,11 +57,11 @@
     "test_script": "tests/specific/wordpress-mysql/test.sh",
     "artifacts": "artifacts/wordpress-mysql/",
     "tool_versions": {
-      "docker": "29.7.2",
-      "docker_compose": "5.5.0",
+      "docker": "29.7.1",
+      "docker_compose": "5.4.0",
       "mint": "1.41.8-1-g4b0d7e91",
-      "syft": "1.51.0",
-      "grype": "0.117.0"
+      "syft": "1.51.1",
+      "grype": "0.118.0"
     }
   }
 }

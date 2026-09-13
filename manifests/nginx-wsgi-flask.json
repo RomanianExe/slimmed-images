@@ -1,44 +1,45 @@
 {
   "example": "nginx-wsgi-flask",
   "cluster": "Python",
-  "generated_at": "2026-09-01T22:02:17Z",
+  "generated_at": "2026-09-13T19:38:07Z",
   "image": {
-    "reference": "ghcr.io/romanianexe/nginx-wsgi-flask:slim",
+    "reference": "ghcr.io/georgetornea/nginx-wsgi-flask:slim",
     "pushed": true,
-    "id": "sha256:13b859f4d2b506960dd52ec66af7b9d8ca2309139ff844f345addcf5d1b4d5ef",
-    "created": "2026-08-27T15:24:44.240206419+03:00",
-    "size_bytes": 8196145,
-    "size_human": "8.20MB"
+    "id": "sha256:3eae5103cdbb9d243ada31dfe0fdbe04fb630bc157179274bcbb0c4091333485",
+    "created": "2026-09-09T23:02:44.835080744+03:00",
+    "size_bytes": 19171328,
+    "size_human": "19.17MB"
   },
   "original": {
     "source": "built from the example's compose file",
     "upstream_reference": null,
     "upstream_digest": null,
-    "local_id": "sha256:607905106ef04aecc2f32b671bc64c775b9356c0bea8da22f33dcca295fa6834",
-    "size_bytes": 31835507,
-    "size_human": "31.84MB"
+    "local_id": "sha256:8379a7252adf2077108ff1b933ddc0a1f8161aabeccd811c03c0307131ec909b",
+    "size_bytes": 84147200,
+    "size_human": "84.15MB"
   },
   "measurements": {
-    "size_reduction_pct": 74.3,
+    "size_metric": "oci_uncompressed_layer_bytes",
+    "size_reduction_pct": 77.21691512017037,
     "sbom_components": {
       "original": 75,
-      "slim": 1
+      "slim": 2
     },
     "vulnerabilities": {
-      "original": 326,
-      "slim": 89,
+      "original": 333,
+      "slim": 90,
       "original_by_severity": {
         "Critical": 24,
-        "High": 150,
-        "Medium": 133,
-        "Low": 18,
+        "High": 154,
+        "Medium": 135,
+        "Low": 19,
         "Negligible": 1
       },
       "slim_by_severity": {
         "High": 35,
         "Medium": 42,
         "Critical": 4,
-        "Low": 7,
+        "Low": 8,
         "Negligible": 1
       }
     },
@@ -50,7 +51,7 @@
   },
   "reproduce": {
     "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
-    "commit": "ed812a5dc33bdae052b9259cdb7f04227409e751",
+    "commit": "7fd6f843550855952ebb306cd545652f7f9db882",
     "worktree_clean": true,
     "command": "pipeline/run-pipeline.sh nginx-wsgi-flask",
     "compose_file": "vendor/awesome-compose/nginx-wsgi-flask/compose.yaml",
@@ -59,11 +60,11 @@
     "test_script": "tests/specific/nginx-wsgi-flask/test.sh",
     "artifacts": "artifacts/nginx-wsgi-flask/",
     "tool_versions": {
-      "docker": "29.7.2",
-      "docker_compose": "5.5.0",
+      "docker": "29.7.1",
+      "docker_compose": "5.4.0",
       "mint": "1.41.8-1-g4b0d7e91",
-      "syft": "1.51.0",
-      "grype": "0.117.0"
+      "syft": "1.51.1",
+      "grype": "0.118.0"
     }
   }
 }

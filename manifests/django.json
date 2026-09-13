@@ -1,44 +1,45 @@
 {
   "example": "django",
   "cluster": "Python",
-  "generated_at": "2026-09-01T22:01:02Z",
+  "generated_at": "2026-09-13T19:34:27Z",
   "image": {
-    "reference": "ghcr.io/romanianexe/django:slim",
+    "reference": "ghcr.io/georgetornea/django:slim",
     "pushed": true,
-    "id": "sha256:0337e5d7bda31a544dfddca8436382e609b145e91d224c601f793d4c6a604401",
-    "created": "2026-08-24T17:38:55.980733349+03:00",
-    "size_bytes": 11358428,
-    "size_human": "11.36MB"
+    "id": "sha256:ad27305dea1af0f16b4f7143b8d36f7000563570262506f3211db48f794081ac",
+    "created": "2026-09-09T22:12:05.626408724+03:00",
+    "size_bytes": 28031488,
+    "size_human": "28.03MB"
   },
   "original": {
     "source": "built from the example's compose file",
     "upstream_reference": null,
     "upstream_digest": null,
-    "local_id": "sha256:46d8072b0e0553eddb20b2bb3be620b49b67d7422f946995b4ba0071f147e999",
-    "size_bytes": 27718999,
-    "size_human": "27.72MB"
+    "local_id": "sha256:8ebffbf03d552b4c834aaed829f86db41bc16b66148556f8b54a35c346e28e7d",
+    "size_bytes": 89571840,
+    "size_human": "89.57MB"
   },
   "measurements": {
-    "size_reduction_pct": 59.0,
+    "size_metric": "oci_uncompressed_layer_bytes",
+    "size_reduction_pct": 68.70502157821029,
     "sbom_components": {
       "original": 63,
       "slim": 1
     },
     "vulnerabilities": {
-      "original": 178,
-      "slim": 71,
+      "original": 182,
+      "slim": 73,
       "original_by_severity": {
         "Critical": 9,
         "High": 63,
-        "Medium": 88,
-        "Low": 17,
+        "Medium": 91,
+        "Low": 18,
         "Negligible": 1
       },
       "slim_by_severity": {
-        "Medium": 36,
+        "Medium": 37,
         "High": 26,
         "Critical": 1,
-        "Low": 7,
+        "Low": 8,
         "Negligible": 1
       }
     },
@@ -50,7 +51,7 @@
   },
   "reproduce": {
     "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
-    "commit": "ed812a5dc33bdae052b9259cdb7f04227409e751",
+    "commit": "7fd6f843550855952ebb306cd545652f7f9db882",
     "worktree_clean": true,
     "command": "pipeline/run-pipeline.sh django",
     "compose_file": "vendor/awesome-compose/django/compose.yaml",
@@ -59,11 +60,11 @@
     "test_script": "tests/specific/django/test.sh",
     "artifacts": "artifacts/django/",
     "tool_versions": {
-      "docker": "29.7.2",
-      "docker_compose": "5.5.0",
+      "docker": "29.7.1",
+      "docker_compose": "5.4.0",
       "mint": "1.41.8-1-g4b0d7e91",
-      "syft": "1.51.0",
-      "grype": "0.117.0"
+      "syft": "1.51.1",
+      "grype": "0.118.0"
     }
   }
 }
