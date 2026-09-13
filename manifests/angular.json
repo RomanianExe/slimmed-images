@@ -1,45 +1,46 @@
 {
   "example": "angular",
   "cluster": "Node/JS",
-  "generated_at": "2026-09-01T22:00:44Z",
+  "generated_at": "2026-09-13T19:22:44Z",
   "image": {
-    "reference": "ghcr.io/romanianexe/angular:slim",
-    "pushed": true,
-    "id": "sha256:63ed4f920d26cfdeea561e040df7df458dc2e3783a2edb3feabc8c6b5ecf6137",
-    "created": "2026-08-27T13:54:45.159872467+03:00",
-    "size_bytes": 66611586,
-    "size_human": "66.61MB"
+    "reference": "ghcr.io/georgetornea/angular:slim",
+    "pushed": false,
+    "id": "sha256:35da7e5ea5298e1bc0a05619b07e597182fa6021449285a02f6300dba05cf75c",
+    "created": "2026-09-09T22:09:14.446385762+03:00",
+    "size_bytes": 200330752,
+    "size_human": "200.33MB"
   },
   "original": {
     "source": "built from the example's compose file",
     "upstream_reference": null,
     "upstream_digest": null,
-    "local_id": "sha256:957575363512b4328165cd43ad2b8f5fc9b1e905729940abe1657e9bb70f264c",
-    "size_bytes": 242807563,
-    "size_human": "242.81MB"
+    "local_id": "sha256:cefc87a1174725ca2ec905b4a291cae1c9967db2811ebfa73e4a9179b747471a",
+    "size_bytes": 821249536,
+    "size_human": "821.25MB"
   },
   "measurements": {
-    "size_reduction_pct": 72.6,
+    "size_metric": "oci_uncompressed_layer_bytes",
+    "size_reduction_pct": 75.60659175824485,
     "sbom_components": {
       "original": 1824,
       "slim": 970
     },
     "vulnerabilities": {
-      "original": 782,
-      "slim": 225,
+      "original": 803,
+      "slim": 237,
       "original_by_severity": {
-        "High": 315,
-        "Medium": 262,
-        "Critical": 50,
+        "High": 327,
+        "Medium": 266,
+        "Critical": 51,
         "Negligible": 84,
-        "Low": 52,
-        "Unknown": 19
+        "Low": 53,
+        "Unknown": 22
       },
       "slim_by_severity": {
-        "High": 112,
-        "Medium": 84,
+        "High": 121,
+        "Medium": 86,
         "Critical": 7,
-        "Low": 22
+        "Low": 23
       }
     },
     "functional_tests": {
@@ -50,7 +51,7 @@
   },
   "reproduce": {
     "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
-    "commit": "ed812a5dc33bdae052b9259cdb7f04227409e751",
+    "commit": "7fd6f843550855952ebb306cd545652f7f9db882",
     "worktree_clean": true,
     "command": "pipeline/run-pipeline.sh angular",
     "compose_file": "vendor/awesome-compose/angular/compose.yaml",
@@ -59,11 +60,11 @@
     "test_script": "tests/specific/angular/test.sh",
     "artifacts": "artifacts/angular/",
     "tool_versions": {
-      "docker": "29.7.2",
-      "docker_compose": "5.5.0",
+      "docker": "29.7.1",
+      "docker_compose": "5.4.0",
       "mint": "1.41.8-1-g4b0d7e91",
-      "syft": "1.51.0",
-      "grype": "0.117.0"
+      "syft": "1.51.1",
+      "grype": "0.118.0"
     }
   }
 }

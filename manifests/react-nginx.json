@@ -1,35 +1,37 @@
 {
   "example": "react-nginx",
   "cluster": "Node/JS",
-  "generated_at": "2026-09-01T22:03:04Z",
+  "generated_at": "2026-09-13T19:23:29Z",
   "image": {
-    "reference": "ghcr.io/romanianexe/react-nginx:slim",
-    "pushed": true,
-    "id": "sha256:8c5a657d0035fde841d68a62d6e1a35318f7f9089d620e50c0227418074bd4db",
-    "created": "2026-08-23T14:58:31.414103956+03:00",
-    "size_bytes": 4481029,
-    "size_human": "4.48MB"
+    "reference": "ghcr.io/georgetornea/react-nginx:slim",
+    "pushed": false,
+    "id": "sha256:a05db446115f7d85b2ddd6e3815012a603bfde4e8147b4ddf3d849094e0156a6",
+    "created": "2026-09-09T23:27:37.512618974+03:00",
+    "size_bytes": 9392640,
+    "size_human": "9.39MB"
   },
   "original": {
     "source": "built from the example's compose file",
     "upstream_reference": null,
     "upstream_digest": null,
-    "local_id": "sha256:994199a9389623ec26a86d5ba38348d0f1c132bd5cd94dd70416d1dd612758bd",
-    "size_bytes": 26447276,
-    "size_human": "26.45MB"
+    "local_id": "sha256:8a5d72dbe7eeff45118480906401925664fa2022c13eb7661629ae439e377b88",
+    "size_bytes": 70879744,
+    "size_human": "70.88MB"
   },
   "measurements": {
-    "size_reduction_pct": 83.1,
+    "size_metric": "oci_uncompressed_layer_bytes",
+    "size_reduction_pct": 86.74848487037426,
     "sbom_components": {
       "original": 71,
       "slim": 1
     },
     "vulnerabilities": {
-      "original": 10,
+      "original": 16,
       "slim": 0,
       "original_by_severity": {
-        "High": 4,
-        "Medium": 6
+        "High": 6,
+        "Medium": 7,
+        "Unknown": 3
       },
       "slim_by_severity": {}
     },
@@ -41,7 +43,7 @@
   },
   "reproduce": {
     "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
-    "commit": "ed812a5dc33bdae052b9259cdb7f04227409e751",
+    "commit": "7fd6f843550855952ebb306cd545652f7f9db882",
     "worktree_clean": true,
     "command": "pipeline/run-pipeline.sh react-nginx",
     "compose_file": "vendor/awesome-compose/react-nginx/compose.yaml",
@@ -50,11 +52,11 @@
     "test_script": "tests/specific/react-nginx/test.sh",
     "artifacts": "artifacts/react-nginx/",
     "tool_versions": {
-      "docker": "29.7.2",
-      "docker_compose": "5.5.0",
+      "docker": "29.7.1",
+      "docker_compose": "5.4.0",
       "mint": "1.41.8-1-g4b0d7e91",
-      "syft": "1.51.0",
-      "grype": "0.117.0"
+      "syft": "1.51.1",
+      "grype": "0.118.0"
     }
   }
 }

@@ -1,35 +1,36 @@
 {
   "example": "react-rust-postgres",
   "cluster": "Rust",
-  "generated_at": "2026-09-01T22:03:08Z",
+  "generated_at": "2026-09-13T19:23:31Z",
   "image": {
-    "reference": "ghcr.io/romanianexe/react-rust-postgres:slim",
-    "pushed": true,
-    "id": "sha256:f50da9c8b98db9fade76d87b9d98dc014fafd7c15eb8695879fb52ca55b019a4",
-    "created": "2026-08-31T23:32:47.099993704+03:00",
-    "size_bytes": 4013483,
-    "size_human": "4.01MB"
+    "reference": "ghcr.io/georgetornea/react-rust-postgres:slim",
+    "pushed": false,
+    "id": "sha256:776a40dfe5d7b2274b2d73bafece9ace813bc35ac3fb991348df61d4ccc0c013",
+    "created": "2026-09-09T23:29:21.739727889+03:00",
+    "size_bytes": 9876480,
+    "size_human": "9.88MB"
   },
   "original": {
     "source": "built from the example's compose file",
     "upstream_reference": null,
     "upstream_digest": null,
-    "local_id": "sha256:7ae49670d3b4da7e625eff93dac3ebd72cdcc8496b0454499d254ffeea3da9f9",
-    "size_bytes": 30717422,
-    "size_human": "30.72MB"
+    "local_id": "sha256:a8330683bb05ddebc23b54db649f4ca69c4997dd5761c932713b62660da02385",
+    "size_bytes": 85394432,
+    "size_human": "85.39MB"
   },
   "measurements": {
-    "size_reduction_pct": 86.9,
+    "size_metric": "oci_uncompressed_layer_bytes",
+    "size_reduction_pct": 88.43428105476478,
     "sbom_components": {
       "original": 88,
       "slim": 0
     },
     "vulnerabilities": {
-      "original": 177,
+      "original": 211,
       "slim": 0,
       "original_by_severity": {
         "Negligible": 58,
-        "High": 17,
+        "High": 51,
         "Medium": 63,
         "Critical": 7,
         "Low": 8,
@@ -45,7 +46,7 @@
   },
   "reproduce": {
     "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
-    "commit": "ed812a5dc33bdae052b9259cdb7f04227409e751",
+    "commit": "7fd6f843550855952ebb306cd545652f7f9db882",
     "worktree_clean": true,
     "command": "pipeline/run-pipeline.sh react-rust-postgres",
     "compose_file": "vendor/awesome-compose/react-rust-postgres/compose.yaml",
@@ -54,11 +55,11 @@
     "test_script": "tests/specific/react-rust-postgres/test.sh",
     "artifacts": "artifacts/react-rust-postgres/",
     "tool_versions": {
-      "docker": "29.7.2",
-      "docker_compose": "5.5.0",
+      "docker": "29.7.1",
+      "docker_compose": "5.4.0",
       "mint": "1.41.8-1-g4b0d7e91",
-      "syft": "1.51.0",
-      "grype": "0.117.0"
+      "syft": "1.51.1",
+      "grype": "0.118.0"
     }
   }
 }

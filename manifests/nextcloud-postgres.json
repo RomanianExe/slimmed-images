@@ -1,13 +1,13 @@
 {
-  "example": "nextcloud-redis-mariadb",
+  "example": "nextcloud-postgres",
   "cluster": "PHP",
-  "generated_at": "2026-09-13T19:23:02Z",
+  "generated_at": "2026-09-13T19:23:00Z",
   "image": {
-    "reference": "ghcr.io/georgetornea/nextcloud-redis-mariadb:slim",
+    "reference": "ghcr.io/georgetornea/nextcloud-postgres:slim",
     "pushed": false,
-    "id": "sha256:b927dc4cda6a5295fb70543b95b91ade6ca906d2fd2b66fd67150944eb9e8cfd",
-    "created": "2026-09-10T01:49:45.623607324+03:00",
-    "size_bytes": 1604991488,
+    "id": "sha256:ef0121225e04552974e6d54c91a154d7d5a6a49cc5fc684fbc31b6a67250863e",
+    "created": "2026-09-10T01:40:26.356086223+03:00",
+    "size_bytes": 1604986368,
     "size_human": "1604.99MB"
   },
   "original": {
@@ -20,7 +20,7 @@
   },
   "measurements": {
     "size_metric": "oci_uncompressed_layer_bytes",
-    "size_reduction_pct": -3.0039811679845223,
+    "size_reduction_pct": -3.003652580333109,
     "sbom_components": {
       "original": 459,
       "slim": 170
@@ -43,8 +43,8 @@
       }
     },
     "functional_tests": {
-      "original": "PASS (tests/specific/nextcloud-redis-mariadb/test.sh)",
-      "slim": "PASS (tests/specific/nextcloud-redis-mariadb/test.sh)"
+      "original": "PASS (tests/specific/nextcloud-postgres/test.sh)",
+      "slim": "PASS (tests/specific/nextcloud-postgres/test.sh)"
     },
     "caveat": "Slim strips package metadata along with unused files, so part of the component and vulnerability drop is reduced scanner visibility rather than reduced exposure. See docs/methodology.md \u00a75."
   },
@@ -52,12 +52,12 @@
     "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
     "commit": "7fd6f843550855952ebb306cd545652f7f9db882",
     "worktree_clean": true,
-    "command": "pipeline/run-pipeline.sh nextcloud-redis-mariadb",
-    "compose_file": "vendor/awesome-compose/nextcloud-redis-mariadb/compose.yaml",
+    "command": "pipeline/run-pipeline.sh nextcloud-postgres",
+    "compose_file": "vendor/awesome-compose/nextcloud-postgres/compose.yaml",
     "compose_service": "nc",
-    "configuration": "examples/nextcloud-redis-mariadb/pipeline.env",
-    "test_script": "tests/specific/nextcloud-redis-mariadb/test.sh",
-    "artifacts": "artifacts/nextcloud-redis-mariadb/",
+    "configuration": "examples/nextcloud-postgres/pipeline.env",
+    "test_script": "tests/specific/nextcloud-postgres/test.sh",
+    "artifacts": "artifacts/nextcloud-postgres/",
     "tool_versions": {
       "docker": "29.7.1",
       "docker_compose": "5.4.0",

@@ -1,43 +1,44 @@
 {
   "example": "flask",
   "cluster": "Python",
-  "generated_at": "2026-09-01T22:01:14Z",
+  "generated_at": "2026-09-13T19:22:57Z",
   "image": {
-    "reference": "ghcr.io/romanianexe/flask:slim",
-    "pushed": true,
-    "id": "sha256:83e69639895729f5b0a1cae9b2d6f02818302ff4b343aae832e73e37aa1ba163",
-    "created": "2026-08-28T12:44:10.333226082+03:00",
-    "size_bytes": 9787365,
-    "size_human": "9.79MB"
+    "reference": "ghcr.io/georgetornea/flask:slim",
+    "pushed": false,
+    "id": "sha256:3c4aecdf9f006e8fb157255f083a656e55cb6be8f5ffc8bf7279b75f7374c168",
+    "created": "2026-09-09T22:23:03.564700712+03:00",
+    "size_bytes": 23323136,
+    "size_human": "23.32MB"
   },
   "original": {
     "source": "built from the example's compose file",
     "upstream_reference": null,
     "upstream_digest": null,
-    "local_id": "sha256:eb51e98ef8b237e9ba3540a5a0fb5cba151f9685c9c5e5980d0c56463a4fb0ae",
-    "size_bytes": 23798617,
-    "size_human": "23.80MB"
+    "local_id": "sha256:a7580158a34e81e7abf55cd3779d1b536b0835287e6bd21c83fa9feae84d4f5d",
+    "size_bytes": 72730112,
+    "size_human": "72.73MB"
   },
   "measurements": {
-    "size_reduction_pct": 58.9,
+    "size_metric": "oci_uncompressed_layer_bytes",
+    "size_reduction_pct": 67.93193993706485,
     "sbom_components": {
       "original": 80,
       "slim": 2
     },
     "vulnerabilities": {
-      "original": 51,
-      "slim": 20,
+      "original": 41,
+      "slim": 21,
       "original_by_severity": {
-        "High": 21,
+        "High": 11,
         "Medium": 22,
-        "Unknown": 4,
-        "Low": 3,
-        "Negligible": 1
+        "Low": 4,
+        "Negligible": 1,
+        "Unknown": 3
       },
       "slim_by_severity": {
         "High": 5,
         "Medium": 11,
-        "Low": 3,
+        "Low": 4,
         "Negligible": 1
       }
     },
@@ -49,7 +50,7 @@
   },
   "reproduce": {
     "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
-    "commit": "ed812a5dc33bdae052b9259cdb7f04227409e751",
+    "commit": "7fd6f843550855952ebb306cd545652f7f9db882",
     "worktree_clean": true,
     "command": "pipeline/run-pipeline.sh flask",
     "compose_file": "vendor/awesome-compose/flask/compose.yaml",
@@ -58,11 +59,11 @@
     "test_script": "tests/specific/flask/test.sh",
     "artifacts": "artifacts/flask/",
     "tool_versions": {
-      "docker": "29.7.2",
-      "docker_compose": "5.5.0",
+      "docker": "29.7.1",
+      "docker_compose": "5.4.0",
       "mint": "1.41.8-1-g4b0d7e91",
-      "syft": "1.51.0",
-      "grype": "0.117.0"
+      "syft": "1.51.1",
+      "grype": "0.118.0"
     }
   }
 }

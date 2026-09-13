@@ -1,43 +1,44 @@
 {
   "example": "flask-redis",
   "cluster": "Python",
-  "generated_at": "2026-09-01T22:01:10Z",
+  "generated_at": "2026-09-13T19:22:55Z",
   "image": {
-    "reference": "ghcr.io/romanianexe/flask-redis:slim",
-    "pushed": true,
-    "id": "sha256:faa0f4b06038e9a54ab2733661796a8c9763d3a492fd884a893dae3af9471ca6",
-    "created": "2026-08-28T12:44:58.225027424+03:00",
-    "size_bytes": 11577522,
-    "size_human": "11.58MB"
+    "reference": "ghcr.io/georgetornea/flask-redis:slim",
+    "pushed": false,
+    "id": "sha256:a47a94595f3663d9c237f0102778e2ccd38bcce54720fa65a39c470f2372cd30",
+    "created": "2026-09-09T22:22:31.210804561+03:00",
+    "size_bytes": 28742144,
+    "size_human": "28.74MB"
   },
   "original": {
     "source": "built from the example's compose file",
     "upstream_reference": null,
     "upstream_digest": null,
-    "local_id": "sha256:edbf2defb51d35c966be0672e7249dd8b0351a290fb9f90a259c1ddfb4d9ffb8",
-    "size_bytes": 25046244,
-    "size_human": "25.05MB"
+    "local_id": "sha256:4e80ad210b8d2572cbed7a4350a544640654bf0bb6455f3b98849560d8ae0cd7",
+    "size_bytes": 77639168,
+    "size_human": "77.64MB"
   },
   "measurements": {
-    "size_reduction_pct": 53.8,
+    "size_metric": "oci_uncompressed_layer_bytes",
+    "size_reduction_pct": 62.97984027855631,
     "sbom_components": {
       "original": 82,
       "slim": 3
     },
     "vulnerabilities": {
-      "original": 51,
-      "slim": 20,
+      "original": 41,
+      "slim": 21,
       "original_by_severity": {
-        "High": 21,
+        "High": 11,
         "Medium": 22,
-        "Unknown": 4,
-        "Low": 3,
-        "Negligible": 1
+        "Low": 4,
+        "Negligible": 1,
+        "Unknown": 3
       },
       "slim_by_severity": {
         "High": 5,
         "Medium": 11,
-        "Low": 3,
+        "Low": 4,
         "Negligible": 1
       }
     },
@@ -49,7 +50,7 @@
   },
   "reproduce": {
     "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
-    "commit": "ed812a5dc33bdae052b9259cdb7f04227409e751",
+    "commit": "7fd6f843550855952ebb306cd545652f7f9db882",
     "worktree_clean": true,
     "command": "pipeline/run-pipeline.sh flask-redis",
     "compose_file": "vendor/awesome-compose/flask-redis/compose.yaml",
@@ -58,11 +59,11 @@
     "test_script": "tests/specific/flask-redis/test.sh",
     "artifacts": "artifacts/flask-redis/",
     "tool_versions": {
-      "docker": "29.7.2",
-      "docker_compose": "5.5.0",
+      "docker": "29.7.1",
+      "docker_compose": "5.4.0",
       "mint": "1.41.8-1-g4b0d7e91",
-      "syft": "1.51.0",
-      "grype": "0.117.0"
+      "syft": "1.51.1",
+      "grype": "0.118.0"
     }
   }
 }

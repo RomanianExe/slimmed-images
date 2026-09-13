@@ -1,43 +1,44 @@
 {
   "example": "nginx-flask-mongo",
   "cluster": "Python",
-  "generated_at": "2026-09-01T22:01:46Z",
+  "generated_at": "2026-09-13T19:23:06Z",
   "image": {
-    "reference": "ghcr.io/romanianexe/nginx-flask-mongo:slim",
-    "pushed": true,
-    "id": "sha256:58b03e8586c137bb203693d5fc1bfb3ad7dbe4914d8a5b8aa9d917141ca0f384",
-    "created": "2026-08-27T13:58:07.336150414+03:00",
-    "size_bytes": 11756466,
-    "size_human": "11.76MB"
+    "reference": "ghcr.io/georgetornea/nginx-flask-mongo:slim",
+    "pushed": false,
+    "id": "sha256:21bdd7ebf328a179c45b381e07c027d6d89ab8d593dbd47066ac0142c650173c",
+    "created": "2026-09-09T22:55:27.208573566+03:00",
+    "size_bytes": 29252096,
+    "size_human": "29.25MB"
   },
   "original": {
     "source": "built from the example's compose file",
     "upstream_reference": null,
     "upstream_digest": null,
-    "local_id": "sha256:2dbd64da3223dec99804dd68236209f07f1e4371981e2f597f7d46b87528a8cd",
-    "size_bytes": 25798261,
-    "size_human": "25.80MB"
+    "local_id": "sha256:9b33625c6e0744f8950a5726ac5f5414ed64ebe9e6ee93b8e99efd5cb4ab2912",
+    "size_bytes": 80377856,
+    "size_human": "80.38MB"
   },
   "measurements": {
-    "size_reduction_pct": 54.4,
+    "size_metric": "oci_uncompressed_layer_bytes",
+    "size_reduction_pct": 63.60677249216501,
     "sbom_components": {
       "original": 82,
       "slim": 2
     },
     "vulnerabilities": {
-      "original": 51,
-      "slim": 20,
+      "original": 41,
+      "slim": 21,
       "original_by_severity": {
-        "High": 21,
+        "High": 11,
         "Medium": 22,
-        "Unknown": 4,
-        "Low": 3,
-        "Negligible": 1
+        "Low": 4,
+        "Negligible": 1,
+        "Unknown": 3
       },
       "slim_by_severity": {
         "High": 5,
         "Medium": 11,
-        "Low": 3,
+        "Low": 4,
         "Negligible": 1
       }
     },
@@ -49,7 +50,7 @@
   },
   "reproduce": {
     "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
-    "commit": "ed812a5dc33bdae052b9259cdb7f04227409e751",
+    "commit": "7fd6f843550855952ebb306cd545652f7f9db882",
     "worktree_clean": true,
     "command": "pipeline/run-pipeline.sh nginx-flask-mongo",
     "compose_file": "vendor/awesome-compose/nginx-flask-mongo/compose.yaml",
@@ -58,11 +59,11 @@
     "test_script": "tests/specific/nginx-flask-mongo/test.sh",
     "artifacts": "artifacts/nginx-flask-mongo/",
     "tool_versions": {
-      "docker": "29.7.2",
-      "docker_compose": "5.5.0",
+      "docker": "29.7.1",
+      "docker_compose": "5.4.0",
       "mint": "1.41.8-1-g4b0d7e91",
-      "syft": "1.51.0",
-      "grype": "0.117.0"
+      "syft": "1.51.1",
+      "grype": "0.118.0"
     }
   }
 }

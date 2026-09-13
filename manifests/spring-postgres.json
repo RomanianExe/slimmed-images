@@ -1,41 +1,42 @@
 {
   "example": "spring-postgres",
   "cluster": "Java",
-  "generated_at": "2026-09-01T22:03:30Z",
+  "generated_at": "2026-09-13T19:23:36Z",
   "image": {
-    "reference": "ghcr.io/romanianexe/spring-postgres:slim",
-    "pushed": true,
-    "id": "sha256:a911ab1a2ecd0dfe320042121abc451c32d42ca04c89617cb2152879f6b226fd",
-    "created": "2026-08-27T13:32:30.839420366+03:00",
-    "size_bytes": 91430096,
-    "size_human": "91.43MB"
+    "reference": "ghcr.io/georgetornea/spring-postgres:slim",
+    "pushed": false,
+    "id": "sha256:b897d0fcfa9a5c2a0d6a19817211af4bbbbcc693691fd277b9ee59aa3d688c16",
+    "created": "2026-09-09T23:36:53.632661287+03:00",
+    "size_bytes": 173874688,
+    "size_human": "173.87MB"
   },
   "original": {
     "source": "built from the example's compose file",
     "upstream_reference": null,
     "upstream_digest": null,
-    "local_id": "sha256:7d1b5400ffe681cf9b00ad83fd42b2d0390f13acc8bac97004010ee2241eae03",
-    "size_bytes": 133711886,
-    "size_human": "133.71MB"
+    "local_id": "sha256:c1676410a5cba84cba9124a3bc8be57d9efc94466335fd1a9efe50ca087c1265",
+    "size_bytes": 314953216,
+    "size_human": "314.95MB"
   },
   "measurements": {
-    "size_reduction_pct": 31.6,
+    "size_metric": "oci_uncompressed_layer_bytes",
+    "size_reduction_pct": 44.7934870428502,
     "sbom_components": {
       "original": 257,
       "slim": 106
     },
     "vulnerabilities": {
-      "original": 575,
-      "slim": 160,
+      "original": 635,
+      "slim": 163,
       "original_by_severity": {
-        "Critical": 9,
+        "Critical": 12,
         "High": 82,
-        "Medium": 321,
-        "Low": 151,
+        "Medium": 389,
+        "Low": 140,
         "Negligible": 12
       },
       "slim_by_severity": {
-        "Critical": 9,
+        "Critical": 12,
         "High": 69,
         "Medium": 64,
         "Low": 18
@@ -49,7 +50,7 @@
   },
   "reproduce": {
     "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
-    "commit": "ed812a5dc33bdae052b9259cdb7f04227409e751",
+    "commit": "7fd6f843550855952ebb306cd545652f7f9db882",
     "worktree_clean": true,
     "command": "pipeline/run-pipeline.sh spring-postgres",
     "compose_file": "vendor/awesome-compose/spring-postgres/compose.yaml",
@@ -58,11 +59,11 @@
     "test_script": "tests/specific/spring-postgres/test.sh",
     "artifacts": "artifacts/spring-postgres/",
     "tool_versions": {
-      "docker": "29.7.2",
-      "docker_compose": "5.5.0",
+      "docker": "29.7.1",
+      "docker_compose": "5.4.0",
       "mint": "1.41.8-1-g4b0d7e91",
-      "syft": "1.51.0",
-      "grype": "0.117.0"
+      "syft": "1.51.1",
+      "grype": "0.118.0"
     }
   }
 }

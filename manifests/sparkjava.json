@@ -1,42 +1,43 @@
 {
   "example": "sparkjava",
   "cluster": "Java",
-  "generated_at": "2026-09-01T22:03:21Z",
+  "generated_at": "2026-09-13T19:23:34Z",
   "image": {
-    "reference": "ghcr.io/romanianexe/sparkjava:slim",
-    "pushed": true,
-    "id": "sha256:437763d4bfe5da84ffff46ba0f5c4aabe64495630eb635ee3150f5230180f392",
-    "created": "2026-08-23T15:17:30.22365407+03:00",
-    "size_bytes": 53958724,
-    "size_human": "53.96MB"
+    "reference": "ghcr.io/georgetornea/sparkjava:slim",
+    "pushed": false,
+    "id": "sha256:633b4a6abb162787d5ecf4d691a2e954abb71896737260d37efce374594cacbf",
+    "created": "2026-09-09T23:34:10.291252704+03:00",
+    "size_bytes": 134736896,
+    "size_human": "134.74MB"
   },
   "original": {
     "source": "built from the example's compose file",
     "upstream_reference": null,
     "upstream_digest": null,
-    "local_id": "sha256:c974ed8192f7f378ec54f03fc4ee577d09141a863e10f06aa00232b7e32bf6d8",
-    "size_bytes": 97444975,
-    "size_human": "97.44MB"
+    "local_id": "sha256:95cff99d58ba198c3edeb69b5277fcec71130bbc259ef01b426ab13509d7b3a4",
+    "size_bytes": 274244608,
+    "size_human": "274.24MB"
   },
   "measurements": {
-    "size_reduction_pct": 44.6,
+    "size_metric": "oci_uncompressed_layer_bytes",
+    "size_reduction_pct": 50.86981035557862,
     "sbom_components": {
       "original": 170,
       "slim": 20
     },
     "vulnerabilities": {
-      "original": 462,
-      "slim": 44,
+      "original": 519,
+      "slim": 47,
       "original_by_severity": {
         "High": 28,
-        "Medium": 281,
-        "Low": 141,
+        "Medium": 346,
+        "Low": 133,
         "Negligible": 12
       },
       "slim_by_severity": {
         "High": 15,
-        "Medium": 19,
-        "Low": 10
+        "Medium": 21,
+        "Low": 11
       }
     },
     "functional_tests": {
@@ -47,7 +48,7 @@
   },
   "reproduce": {
     "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
-    "commit": "ed812a5dc33bdae052b9259cdb7f04227409e751",
+    "commit": "7fd6f843550855952ebb306cd545652f7f9db882",
     "worktree_clean": true,
     "command": "pipeline/run-pipeline.sh sparkjava",
     "compose_file": "vendor/awesome-compose/sparkjava/compose.yaml",
@@ -56,11 +57,11 @@
     "test_script": "tests/specific/sparkjava/test.sh",
     "artifacts": "artifacts/sparkjava/",
     "tool_versions": {
-      "docker": "29.7.2",
-      "docker_compose": "5.5.0",
+      "docker": "29.7.1",
+      "docker_compose": "5.4.0",
       "mint": "1.41.8-1-g4b0d7e91",
-      "syft": "1.51.0",
-      "grype": "0.117.0"
+      "syft": "1.51.1",
+      "grype": "0.118.0"
     }
   }
 }

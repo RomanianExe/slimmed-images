@@ -1,36 +1,37 @@
 {
   "example": "nginx-golang",
   "cluster": "Go",
-  "generated_at": "2026-09-01T22:02:04Z",
+  "generated_at": "2026-09-13T19:23:13Z",
   "image": {
-    "reference": "ghcr.io/romanianexe/nginx-golang:slim",
-    "pushed": true,
-    "id": "sha256:43e06107fd6f301dd0a489f9da3ad37613c63d548b99f7efe4fae91361051a65",
-    "created": "2026-08-28T12:45:51.008567087+03:00",
-    "size_bytes": 4804703,
-    "size_human": "4.80MB"
+    "reference": "ghcr.io/georgetornea/nginx-golang:slim",
+    "pushed": false,
+    "id": "sha256:fe12492d94b329139544ed1820b1250f8c82541f4f5d3b252d9e0cecf4702d86",
+    "created": "2026-09-09T23:01:08.112204924+03:00",
+    "size_bytes": 8186368,
+    "size_human": "8.19MB"
   },
   "original": {
     "source": "built from the example's compose file",
     "upstream_reference": null,
     "upstream_digest": null,
-    "local_id": "sha256:2eb279bd1aed75cc0d97e218259b577b74e24d026f9ed3ccda0c1e11005f5406",
-    "size_bytes": 123401523,
-    "size_human": "123.40MB"
+    "local_id": "sha256:a3ecd1d31e0f40a3378b116bde0677d3275904403fe595933c29938ea84f35a9",
+    "size_bytes": 347691520,
+    "size_human": "347.69MB"
   },
   "measurements": {
-    "size_reduction_pct": 96.1,
+    "size_metric": "oci_uncompressed_layer_bytes",
+    "size_reduction_pct": 97.64550829424888,
     "sbom_components": {
       "original": 59,
       "slim": 3
     },
     "vulnerabilities": {
-      "original": 574,
+      "original": 584,
       "slim": 43,
       "original_by_severity": {
-        "High": 271,
-        "Critical": 38,
-        "Medium": 245,
+        "High": 277,
+        "Critical": 40,
+        "Medium": 247,
         "Low": 20
       },
       "slim_by_severity": {
@@ -48,7 +49,7 @@
   },
   "reproduce": {
     "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
-    "commit": "ed812a5dc33bdae052b9259cdb7f04227409e751",
+    "commit": "7fd6f843550855952ebb306cd545652f7f9db882",
     "worktree_clean": true,
     "command": "pipeline/run-pipeline.sh nginx-golang",
     "compose_file": "vendor/awesome-compose/nginx-golang/compose.yaml",
@@ -57,11 +58,11 @@
     "test_script": "tests/specific/nginx-golang/test.sh",
     "artifacts": "artifacts/nginx-golang/",
     "tool_versions": {
-      "docker": "29.7.2",
-      "docker_compose": "5.5.0",
+      "docker": "29.7.1",
+      "docker_compose": "5.4.0",
       "mint": "1.41.8-1-g4b0d7e91",
-      "syft": "1.51.0",
-      "grype": "0.117.0"
+      "syft": "1.51.1",
+      "grype": "0.118.0"
     }
   }
 }

@@ -1,0 +1,68 @@
+{
+  "example": "postgresql-pgadmin",
+  "cluster": "Python",
+  "generated_at": "2026-09-13T19:23:20Z",
+  "image": {
+    "reference": "ghcr.io/georgetornea/postgresql-pgadmin:slim",
+    "pushed": false,
+    "id": "sha256:83d038e1616feda157b3373c6bc78707db481d47c65fba90ee6db1f9b50fb82a",
+    "created": "2026-09-09T23:11:31.024716472+03:00",
+    "size_bytes": 135214080,
+    "size_human": "135.21MB"
+  },
+  "original": {
+    "source": "prebuilt",
+    "upstream_reference": "dpage/pgadmin4:9.17@sha256:2f4ce946ddf8360680d7eff4eaba1d91859eb6b4003e6623bad5c63a322c2f4d",
+    "upstream_digest": "dpage/pgadmin4@sha256:2f4ce946ddf8360680d7eff4eaba1d91859eb6b4003e6623bad5c63a322c2f4d",
+    "local_id": "sha256:78bcd13ffb0a9a6dff344f4c4a212e3b7622cf1a5a83566c79e550b2ab561487",
+    "size_bytes": 547432960,
+    "size_human": "547.43MB"
+  },
+  "measurements": {
+    "size_metric": "oci_uncompressed_layer_bytes",
+    "size_reduction_pct": 75.30033997222235,
+    "sbom_components": {
+      "original": 210,
+      "slim": 6
+    },
+    "vulnerabilities": {
+      "original": 65,
+      "slim": 21,
+      "original_by_severity": {
+        "High": 32,
+        "Critical": 6,
+        "Medium": 19,
+        "Low": 4,
+        "Unknown": 4
+      },
+      "slim_by_severity": {
+        "High": 7,
+        "Medium": 9,
+        "Low": 5
+      }
+    },
+    "functional_tests": {
+      "original": "PASS (tests/specific/postgresql-pgadmin/test.sh)",
+      "slim": "PASS (tests/specific/postgresql-pgadmin/test.sh)"
+    },
+    "caveat": "Slim strips package metadata along with unused files, so part of the component and vulnerability drop is reduced scanner visibility rather than reduced exposure. See docs/methodology.md \u00a75."
+  },
+  "reproduce": {
+    "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
+    "commit": "7fd6f843550855952ebb306cd545652f7f9db882",
+    "worktree_clean": true,
+    "command": "pipeline/run-pipeline.sh postgresql-pgadmin",
+    "compose_file": "vendor/awesome-compose/postgresql-pgadmin/compose.yaml",
+    "compose_service": "pgadmin",
+    "configuration": "examples/postgresql-pgadmin/pipeline.env",
+    "test_script": "tests/specific/postgresql-pgadmin/test.sh",
+    "artifacts": "artifacts/postgresql-pgadmin/",
+    "tool_versions": {
+      "docker": "29.7.1",
+      "docker_compose": "5.4.0",
+      "mint": "1.41.8-1-g4b0d7e91",
+      "syft": "1.51.1",
+      "grype": "0.118.0"
+    }
+  }
+}

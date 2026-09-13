@@ -1,25 +1,26 @@
 {
   "example": "traefik-golang",
   "cluster": "Go",
-  "generated_at": "2026-09-01T22:03:33Z",
+  "generated_at": "2026-09-13T19:23:38Z",
   "image": {
-    "reference": "ghcr.io/romanianexe/traefik-golang:slim",
-    "pushed": true,
-    "id": "sha256:323f722d7dece41f5f4c12c517923eaf8622ac497207fe97a5d42f109283bb9c",
-    "created": "2026-08-27T13:15:26.582067325+03:00",
-    "size_bytes": 3774391,
-    "size_human": "3.77MB"
+    "reference": "ghcr.io/georgetornea/traefik-golang:slim",
+    "pushed": false,
+    "id": "sha256:312df20a8e5f78881f2845dc575eb82be890be317a6d3d4fe5a932a9f51ea716",
+    "created": "2026-09-09T23:38:04.022403323+03:00",
+    "size_bytes": 6243840,
+    "size_human": "6.24MB"
   },
   "original": {
     "source": "built from the example's compose file",
     "upstream_reference": null,
     "upstream_digest": null,
-    "local_id": "sha256:4983e72677684043140659d65df3f607bde3d4e62593f3c4cfc0c58bb4240bcd",
-    "size_bytes": 3557103,
-    "size_human": "3.56MB"
+    "local_id": "sha256:010474c26fb498f8ec952eb31d5a46542c80cbcbbce48a39e159bfa240276e03",
+    "size_bytes": 6242304,
+    "size_human": "6.24MB"
   },
   "measurements": {
-    "size_reduction_pct": -6.1,
+    "size_metric": "oci_uncompressed_layer_bytes",
+    "size_reduction_pct": -0.024606299212598427,
     "sbom_components": {
       "original": 2,
       "slim": 2
@@ -48,7 +49,7 @@
   },
   "reproduce": {
     "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
-    "commit": "ed812a5dc33bdae052b9259cdb7f04227409e751",
+    "commit": "7fd6f843550855952ebb306cd545652f7f9db882",
     "worktree_clean": true,
     "command": "pipeline/run-pipeline.sh traefik-golang",
     "compose_file": "vendor/awesome-compose/traefik-golang/compose.yaml",
@@ -57,11 +58,11 @@
     "test_script": "tests/specific/traefik-golang/test.sh",
     "artifacts": "artifacts/traefik-golang/",
     "tool_versions": {
-      "docker": "29.7.2",
-      "docker_compose": "5.5.0",
+      "docker": "29.7.1",
+      "docker_compose": "5.4.0",
       "mint": "1.41.8-1-g4b0d7e91",
-      "syft": "1.51.0",
-      "grype": "0.117.0"
+      "syft": "1.51.1",
+      "grype": "0.118.0"
     }
   }
 }

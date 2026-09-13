@@ -1,44 +1,45 @@
 {
   "example": "fastapi",
   "cluster": "Python",
-  "generated_at": "2026-09-01T22:01:06Z",
+  "generated_at": "2026-09-13T19:22:53Z",
   "image": {
-    "reference": "ghcr.io/romanianexe/fastapi:slim",
-    "pushed": true,
-    "id": "sha256:d02d6c456a08b356efa16ca7f689f4e81dfac3082a10f2545bef1c8c8d9b5760",
-    "created": "2026-08-27T13:23:34.218472143+03:00",
-    "size_bytes": 21448485,
-    "size_human": "21.45MB"
+    "reference": "ghcr.io/georgetornea/fastapi:slim",
+    "pushed": false,
+    "id": "sha256:8d5da966bb05018347f4c9fa4fcc3929c779e735fbd807fc9acb36d295b351bd",
+    "created": "2026-09-09T22:21:54.591221964+03:00",
+    "size_bytes": 55171584,
+    "size_human": "55.17MB"
   },
   "original": {
     "source": "built from the example's compose file",
     "upstream_reference": null,
     "upstream_digest": null,
-    "local_id": "sha256:2e5cf6c449e2b16d4b87b3d3a68bce04146e8f1a42ff11c24df4b6bb53d1a8ea",
-    "size_bytes": 62337285,
-    "size_human": "62.34MB"
+    "local_id": "sha256:8e0d690764d140323ede5b9857ac409d39ea5f171c386fda29cf73aa8b299b8e",
+    "size_bytes": 184939008,
+    "size_human": "184.94MB"
   },
   "measurements": {
-    "size_reduction_pct": 65.6,
+    "size_metric": "oci_uncompressed_layer_bytes",
+    "size_reduction_pct": 70.16768685165653,
     "sbom_components": {
       "original": 169,
       "slim": 6
     },
     "vulnerabilities": {
-      "original": 414,
-      "slim": 42,
+      "original": 460,
+      "slim": 43,
       "original_by_severity": {
-        "Critical": 16,
-        "High": 129,
-        "Medium": 145,
+        "Medium": 149,
+        "Critical": 22,
+        "High": 167,
         "Negligible": 54,
-        "Unknown": 47,
-        "Low": 23
+        "Low": 24,
+        "Unknown": 44
       },
       "slim_by_severity": {
         "High": 13,
         "Medium": 23,
-        "Low": 5,
+        "Low": 6,
         "Negligible": 1
       }
     },
@@ -50,7 +51,7 @@
   },
   "reproduce": {
     "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
-    "commit": "ed812a5dc33bdae052b9259cdb7f04227409e751",
+    "commit": "7fd6f843550855952ebb306cd545652f7f9db882",
     "worktree_clean": true,
     "command": "pipeline/run-pipeline.sh fastapi",
     "compose_file": "vendor/awesome-compose/fastapi/compose.yaml",
@@ -59,11 +60,11 @@
     "test_script": "tests/specific/fastapi/test.sh",
     "artifacts": "artifacts/fastapi/",
     "tool_versions": {
-      "docker": "29.7.2",
-      "docker_compose": "5.5.0",
+      "docker": "29.7.1",
+      "docker_compose": "5.4.0",
       "mint": "1.41.8-1-g4b0d7e91",
-      "syft": "1.51.0",
-      "grype": "0.117.0"
+      "syft": "1.51.1",
+      "grype": "0.118.0"
     }
   }
 }

@@ -1,39 +1,40 @@
 {
   "example": "apache-php",
   "cluster": "PHP",
-  "generated_at": "2026-09-01T22:00:50Z",
+  "generated_at": "2026-09-13T19:22:46Z",
   "image": {
-    "reference": "ghcr.io/romanianexe/apache-php:slim",
-    "pushed": true,
-    "id": "sha256:c5adfe7fc57652ad1145fb5b4c9612b1d00b123fb07158fde8811026d5ecfec8",
-    "created": "2026-08-23T13:03:53.902852882+03:00",
-    "size_bytes": 33723017,
-    "size_human": "33.72MB"
+    "reference": "ghcr.io/georgetornea/apache-php:slim",
+    "pushed": false,
+    "id": "sha256:250c0f27ca7b6730d2f25f4da7de60c71cf5744380303de68a85476f634242cc",
+    "created": "2026-09-09T22:10:28.099839028+03:00",
+    "size_bytes": 77460480,
+    "size_human": "77.46MB"
   },
   "original": {
     "source": "built from the example's compose file",
     "upstream_reference": null,
     "upstream_digest": null,
-    "local_id": "sha256:68e209b8c8f9173a02eab0df17da31700d850eee41bc4f00587d89bfb8c8a3ca",
-    "size_bytes": 167773412,
-    "size_human": "167.77MB"
+    "local_id": "sha256:0c02d4df9be1de19c84bb57b11c6a5e63c6037888ccb28fe1e7660dac5a457e3",
+    "size_bytes": 480775168,
+    "size_human": "480.78MB"
   },
   "measurements": {
-    "size_reduction_pct": 79.9,
+    "size_metric": "oci_uncompressed_layer_bytes",
+    "size_reduction_pct": 83.88841912900128,
     "sbom_components": {
       "original": 197,
       "slim": 4
     },
     "vulnerabilities": {
-      "original": 1929,
+      "original": 1955,
       "slim": 59,
       "original_by_severity": {
-        "Critical": 183,
-        "High": 488,
-        "Medium": 410,
-        "Low": 48,
+        "Critical": 185,
+        "High": 493,
+        "Medium": 415,
         "Negligible": 784,
-        "Unknown": 16
+        "Low": 48,
+        "Unknown": 30
       },
       "slim_by_severity": {
         "Critical": 12,
@@ -50,7 +51,7 @@
   },
   "reproduce": {
     "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
-    "commit": "ed812a5dc33bdae052b9259cdb7f04227409e751",
+    "commit": "7fd6f843550855952ebb306cd545652f7f9db882",
     "worktree_clean": true,
     "command": "pipeline/run-pipeline.sh apache-php",
     "compose_file": "vendor/awesome-compose/apache-php/compose.yaml",
@@ -59,11 +60,11 @@
     "test_script": "tests/specific/apache-php/test.sh",
     "artifacts": "artifacts/apache-php/",
     "tool_versions": {
-      "docker": "29.7.2",
-      "docker_compose": "5.5.0",
+      "docker": "29.7.1",
+      "docker_compose": "5.4.0",
       "mint": "1.41.8-1-g4b0d7e91",
-      "syft": "1.51.0",
-      "grype": "0.117.0"
+      "syft": "1.51.1",
+      "grype": "0.118.0"
     }
   }
 }

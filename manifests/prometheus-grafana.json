@@ -1,41 +1,43 @@
 {
   "example": "prometheus-grafana",
   "cluster": "Go",
-  "generated_at": "2026-09-01T22:02:42Z",
+  "generated_at": "2026-09-13T19:23:22Z",
   "image": {
-    "reference": "ghcr.io/romanianexe/prometheus-grafana:slim",
-    "pushed": true,
-    "id": "sha256:07989a5d110e5830d2204297543dd9a035f0bcb7aae51f84310544af19db8178",
-    "created": "2026-09-01T00:44:21.556449815+03:00",
-    "size_bytes": 413283970,
-    "size_human": "413.28MB"
+    "reference": "ghcr.io/georgetornea/prometheus-grafana:slim",
+    "pushed": false,
+    "id": "sha256:464d1e9854ccc049958078917d13d164498ef6997b0dabf3ca3b098b806dedaa",
+    "created": "2026-09-09T23:15:55.589872832+03:00",
+    "size_bytes": 998405632,
+    "size_human": "998.41MB"
   },
   "original": {
     "source": "prebuilt",
-    "upstream_reference": "grafana/grafana:latest",
-    "upstream_digest": "grafana/grafana@sha256:3fd54ae1214669f8355f065ec9f6445d5279a3d77095ab048ca045685272429b",
-    "local_id": "sha256:3fd54ae1214669f8355f065ec9f6445d5279a3d77095ab048ca045685272429b",
-    "size_bytes": 474098752,
-    "size_human": "474.10MB"
+    "upstream_reference": "grafana/grafana:13.2.1@sha256:f772d434e8fab0049deb2b1b30abd43342bcfca1537614aa8d36080232cf4283",
+    "upstream_digest": "grafana/grafana@sha256:f772d434e8fab0049deb2b1b30abd43342bcfca1537614aa8d36080232cf4283",
+    "local_id": "sha256:8400f365c39767b0d0df30e3aeb0796f873c3acf89b28089745bfafd88d83c7c",
+    "size_bytes": 1405822464,
+    "size_human": "1405.82MB"
   },
   "measurements": {
-    "size_reduction_pct": 12.8,
+    "size_metric": "oci_uncompressed_layer_bytes",
+    "size_reduction_pct": 28.98067447583481,
     "sbom_components": {
-      "original": 1791,
-      "slim": 1760
+      "original": 1773,
+      "slim": 1650
     },
     "vulnerabilities": {
-      "original": 178,
-      "slim": 157,
+      "original": 221,
+      "slim": 164,
       "original_by_severity": {
-        "High": 114,
-        "Medium": 59,
-        "Unknown": 4,
-        "Low": 1
+        "High": 144,
+        "Critical": 8,
+        "Medium": 66,
+        "Low": 1,
+        "Unknown": 2
       },
       "slim_by_severity": {
-        "High": 100,
-        "Medium": 54,
+        "High": 106,
+        "Medium": 55,
         "Low": 3
       }
     },
@@ -47,7 +49,7 @@
   },
   "reproduce": {
     "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
-    "commit": "ed812a5dc33bdae052b9259cdb7f04227409e751",
+    "commit": "7fd6f843550855952ebb306cd545652f7f9db882",
     "worktree_clean": true,
     "command": "pipeline/run-pipeline.sh prometheus-grafana",
     "compose_file": "vendor/awesome-compose/prometheus-grafana/compose.yaml",
@@ -56,11 +58,11 @@
     "test_script": "tests/specific/prometheus-grafana/test.sh",
     "artifacts": "artifacts/prometheus-grafana/",
     "tool_versions": {
-      "docker": "29.7.2",
-      "docker_compose": "5.5.0",
+      "docker": "29.7.1",
+      "docker_compose": "5.4.0",
       "mint": "1.41.8-1-g4b0d7e91",
-      "syft": "1.51.0",
-      "grype": "0.117.0"
+      "syft": "1.51.1",
+      "grype": "0.118.0"
     }
   }
 }

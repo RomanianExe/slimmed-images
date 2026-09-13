@@ -1,0 +1,69 @@
+{
+  "example": "elasticsearch-logstash-kibana",
+  "cluster": "Java/Node",
+  "generated_at": "2026-09-13T19:22:51Z",
+  "image": {
+    "reference": "ghcr.io/georgetornea/elasticsearch-logstash-kibana:slim",
+    "pushed": false,
+    "id": "sha256:64593e8b3573963c302a4a1f3e1d2b0457273df28c86917805ffd8ca2037265c",
+    "created": "2026-09-09T22:18:29.279209711+03:00",
+    "size_bytes": 374818304,
+    "size_human": "374.82MB"
+  },
+  "original": {
+    "source": "prebuilt",
+    "upstream_reference": "kibana:7.17.28@sha256:69f188281a5dd3524a7b8accd36bc16faccfc977aeec3814ef539629f095eb4f",
+    "upstream_digest": "kibana@sha256:69f188281a5dd3524a7b8accd36bc16faccfc977aeec3814ef539629f095eb4f",
+    "local_id": "sha256:926aaaed455b312834811b83724588491957f5aca46e9c6a2b1a081e56674f6a",
+    "size_bytes": 916799488,
+    "size_human": "916.80MB"
+  },
+  "measurements": {
+    "size_metric": "oci_uncompressed_layer_bytes",
+    "size_reduction_pct": 59.11665430598495,
+    "sbom_components": {
+      "original": 977,
+      "slim": 537
+    },
+    "vulnerabilities": {
+      "original": 548,
+      "slim": 143,
+      "original_by_severity": {
+        "Medium": 354,
+        "High": 74,
+        "Critical": 5,
+        "Low": 113,
+        "Negligible": 2
+      },
+      "slim_by_severity": {
+        "High": 66,
+        "Critical": 4,
+        "Medium": 61,
+        "Low": 12
+      }
+    },
+    "functional_tests": {
+      "original": "PASS (tests/specific/elasticsearch-logstash-kibana/test.sh)",
+      "slim": "PASS (tests/specific/elasticsearch-logstash-kibana/test.sh)"
+    },
+    "caveat": "Slim strips package metadata along with unused files, so part of the component and vulnerability drop is reduced scanner visibility rather than reduced exposure. See docs/methodology.md \u00a75."
+  },
+  "reproduce": {
+    "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
+    "commit": "7fd6f843550855952ebb306cd545652f7f9db882",
+    "worktree_clean": true,
+    "command": "pipeline/run-pipeline.sh elasticsearch-logstash-kibana",
+    "compose_file": "vendor/awesome-compose/elasticsearch-logstash-kibana/compose.yaml",
+    "compose_service": "kibana",
+    "configuration": "examples/elasticsearch-logstash-kibana/pipeline.env",
+    "test_script": "tests/specific/elasticsearch-logstash-kibana/test.sh",
+    "artifacts": "artifacts/elasticsearch-logstash-kibana/",
+    "tool_versions": {
+      "docker": "29.7.1",
+      "docker_compose": "5.4.0",
+      "mint": "1.41.8-1-g4b0d7e91",
+      "syft": "1.51.1",
+      "grype": "0.118.0"
+    }
+  }
+}

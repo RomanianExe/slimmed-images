@@ -1,44 +1,45 @@
 {
   "example": "react-express-mysql",
   "cluster": "Node/JS",
-  "generated_at": "2026-09-01T22:02:53Z",
+  "generated_at": "2026-09-13T19:23:25Z",
   "image": {
-    "reference": "ghcr.io/romanianexe/react-express-mysql:slim",
-    "pushed": true,
-    "id": "sha256:757ff65a337861ae84648680c83f1004eea3616085592d55a9732ffb775e7f75",
-    "created": "2026-08-27T14:08:11.679341086+03:00",
-    "size_bytes": 55605029,
-    "size_human": "55.61MB"
+    "reference": "ghcr.io/georgetornea/react-express-mysql:slim",
+    "pushed": false,
+    "id": "sha256:c74b036144698c022aeceb2a114f81d761dcf4f1ae7a95a017b7ff7729b9b634",
+    "created": "2026-09-09T23:22:49.632595241+03:00",
+    "size_bytes": 135365632,
+    "size_human": "135.37MB"
   },
   "original": {
     "source": "built from the example's compose file",
     "upstream_reference": null,
     "upstream_digest": null,
-    "local_id": "sha256:92c42e914cc3b8990721072f727366b15dd3b96180859ec5acdae9470079a534",
-    "size_bytes": 417884686,
-    "size_human": "417.88MB"
+    "local_id": "sha256:e17333f768eb8792e1acf31862bb72edf0f35a1f3ad693fe639ef0a45684bf4c",
+    "size_bytes": 1205041152,
+    "size_human": "1205.04MB"
   },
   "measurements": {
-    "size_reduction_pct": 86.7,
+    "size_metric": "oci_uncompressed_layer_bytes",
+    "size_reduction_pct": 88.76672122148406,
     "sbom_components": {
-      "original": 661,
-      "slim": 76
+      "original": 893,
+      "slim": 78
     },
     "vulnerabilities": {
-      "original": 1791,
-      "slim": 24,
+      "original": 2017,
+      "slim": 28,
       "original_by_severity": {
-        "High": 263,
-        "Medium": 408,
-        "Negligible": 916,
-        "Critical": 78,
-        "Low": 80,
-        "Unknown": 46
+        "High": 353,
+        "Medium": 488,
+        "Negligible": 913,
+        "Critical": 89,
+        "Low": 129,
+        "Unknown": 45
       },
       "slim_by_severity": {
-        "High": 8,
+        "High": 9,
         "Critical": 2,
-        "Medium": 7,
+        "Medium": 10,
         "Low": 7
       }
     },
@@ -50,7 +51,7 @@
   },
   "reproduce": {
     "pipeline_repository": "https://github.com/RomanianExe/docker-image-minimization-pipeline.git",
-    "commit": "ed812a5dc33bdae052b9259cdb7f04227409e751",
+    "commit": "7fd6f843550855952ebb306cd545652f7f9db882",
     "worktree_clean": true,
     "command": "pipeline/run-pipeline.sh react-express-mysql",
     "compose_file": "vendor/awesome-compose/react-express-mysql/compose.yaml",
@@ -59,11 +60,11 @@
     "test_script": "tests/specific/react-express-mysql/test.sh",
     "artifacts": "artifacts/react-express-mysql/",
     "tool_versions": {
-      "docker": "29.7.2",
-      "docker_compose": "5.5.0",
+      "docker": "29.7.1",
+      "docker_compose": "5.4.0",
       "mint": "1.41.8-1-g4b0d7e91",
-      "syft": "1.51.0",
-      "grype": "0.117.0"
+      "syft": "1.51.1",
+      "grype": "0.118.0"
     }
   }
 }
